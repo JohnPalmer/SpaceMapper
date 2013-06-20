@@ -1,0 +1,1080 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Space Mapper
+ * Copyright (C) 2012, 2013 John R.B. Palmer
+ * Contact: jrpalmer@princeton.edu
+ * 
+ * This file is part of Space Mapper.
+ * 
+ * Space Mapper is free software: you can redistribute it and/or modify 
+ * it under the terms of the GNU General Public License as published by 
+ * the Free Software Foundation, either version 3 of the License, or (at 
+ * your option) any later version.
+ * 
+ * Space Mapper is distributed in the hope that it will be useful, but 
+ * WITHOUT ANY WARRANTY; without even the implied warranty of 
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+ * See the GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License along 
+ * with Space Mapper.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<resources>
+
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="package_name" translatable="false">edu.princeton.jrpalmer.asmlibrary</string>
+    <string name="internal_message_id" translatable="false">edu.princeton.jrpalmer.asmlibrary</string>
+    <string name="content_provider_authority_uploadqueue" translatable="false">edu.princeton.jrpalmer.asmlibrary.uploadqueueprovider</string>
+    <string name="content_provider_authority_fixes" translatable="false">edu.princeton.jrpalmer.asmlibrary.spacemapperfixprovider</string>
+    <string name="warning_calendar_start_date">Note: You have picked a start date that is after your end date. Change one or the other if you want to view data on the map.</string>
+    <string name="warning_calendar_end_date">Note: You have picked an end date that is before your start date. Change one or the other if you want to view data on the map.</string>
+    <string name="save_db_label">Submit</string>
+    <string name="pro_welcome">You have just been given a free upgrade to Space Mapper Pro. You can stop participating in the Activity-Space Project at any time by changing the Participation settings on your Preferences menu.\n\nThank you very much!</string>
+    <string name="dbq_battery_prompt">Did you have problems with your phone’s battery life while running the application?</string>
+    <string name="db_howfound_friend">From a friend or acquaintance</string>
+    <string name="db_howfound_ad">From an advertisement</string>
+    <string name="db_howfound_market">On Google Play</string>
+    <string name="db_howfound_other">Other</string>
+    <string name="db_heading">Survey</string>
+    <string name="db_subheading">If you have a moment, we would appreciate your feedback!</string>
+    <string name="dbq_howfound_prompt">How did you hear about this application? (Check all that apply.)</string>
+    <string name="dbq_friends_prompt">Do you know anyone else who used the application?</string>
+    <string name="dbq_behavior1_prompt">Do you think that having the application running on your phone caused you to change your behavior at all? </string>
+    <string name="dbq_behavior2_prompt">Did you think about the fact that the application was running while you went about your daily activities?</string>
+    <string name="proconversion_notification_initial">Space Mapper upgrade</string>
+    <string name="proconversion_notification_subject">Space Mapper upgrade</string>
+    <string name="proconversion_notification">You have a received a free upgrade to Space Mapper Pro.</string>
+    <string name="offline_warning">You are offline. Please check your internet connection and try again.</string>
+    <string name="uploading">Uploading</string>
+    <string name="location">location</string>
+    <string name="locations">locations</string>
+    <string name="thank_you_for_participating">Thank you for participating!</string>
+    <string name="map_settings">Map Settings</string>
+    <string name="start_date_heading">Start Date</string>
+    <string name="start_date">start date</string>
+    <string name="limit_start_date">Limit map start date?</string>
+    <string name="end_date_heading">End Date</string>
+    <string name="end_date_text">Limit map end date?</string>
+    <string name="end_date">End Date</string>
+    <string name="sat">Satellite</string>
+    <string name="use_sat_q">Use satellite image?</string>
+    <string name="acc">Accuracy</string>
+    <string name="toggleacc_q">Display accuracy circles?</string>
+    <string name="icons">Icons</string>
+    <string name="display_icons_q">Display location icons?</string>
+    <string name="data_settings_label">Data Settings</string>
+    <string name="storage_size_heading">User Data \nSize</string>
+    <string name="volunteer">Volunteer?</string>
+    <string name="share_data_text">Share data with \nresearchers?</string>
+    <string name="participation_heading">Participation</string>
+    <string name="participation_time_label">Total participation time:</string>
+    <string name="nlocations_shared_label">Number of locations shared:</string>
+    <string name="pending_uploads_heading">Pending \nUploads</string>
+    <string name="files_deleted">files deleted</string>
+    <string name="locations_deleted">locations deleted</string>
+    <string name="calculating">calculating</string>
+    <string name="available">available</string>
+    <string name="used">used</string>
+    <string name="present">present</string>
+    <string name="withdraw_message_pro">You have successfully withdrawn from the study. You can return to it at any time in the preferences menu. Thank you for your interest and participation.</string>
+    <string name="filenameprefix_map">mySpaceMapperMap</string>
+    <string name="filenameprefix_csv">mySpaceMapperLocations</string>
+    <string name="more_info">More Information</string>
+    <string name="currently_sharing">You are currently sharing data with the activity-space project. This setting may be changed after you have participated for at least one week and shared at least 1,000 location fixes.</string>
+    <string name="stats_button">Statistics</string>
+    <string name="menu_asp">Activity-Space Project</string>
+    <string name="saving_data">Saving data.</string>
+    <string name="database_updating_text">Updating database. Please wait...</string>
+    <string name="mapdata_loading_text">Loading location data.</string>
+    <string name="first_station_time_label">"First: "</string>
+    <string name="latest_station_time_label">"Latest: "</string>
+    <string name="tracking_notification_initial">Tracking your activity-space</string>
+    <string name="tracking_notification">Tracking your activity-space.</string>
+    <string name="tracking_notification_subject">Space Mapper Tracking</string>
+    <string name="menu_flush_gps">Refresh GPS</string>
+    <string name="renew_gps_alert">Would you like to delete and download new A-GPS data? Doing so may improve GPS performance if you currently have a good data connection and your GPS appears to be stuck. However, you may experience a delay in GPS location estimates, particularly if your data connection is slow.</string>
+    <string name="first_fix_time">First Spacetime Point:</string>
+    <string name="last_fix_time">Last Spacetime Point:</string>
+    <string name="progress_text">Loading spacetime data. Please wait...</string>
+    <string name="message_store_data">Store My Data is currently off. Please go to the Preferences menu and turn it on if you would like to create a lifeline.</string>
+    <string name="message_no_data">You do not yet have enough data to build a lifeline. Collect at least two location estimates and then try again.</string>
+    <string name="toggle_zax">Toggle Time Axis</string>
+    <string name="toggle_xyax">Toggle Space Axes</string>
+    <string name="lifeline_button">Spacetime</string>
+    <string name="made_with_SM">Made with Space Mapper</string>
+    <string name="menu_share">Share App</string>
+    <string name="share_with">Share with</string>
+    <string name="rate_heading">Rate Space Mapper</string>
+    <string name="rate_no">No, thanks</string>
+    <string name="rate_later">Remind me later</string>
+    <string name="rate_yes">Rate Space Mapper</string>
+    <string name="rate_prompt">If you enjoy using Space Mapper, please take a moment to rate it. Thanks for your support!</string>
+    <string name="menu_rate">Rate App</string>
+    <string name="menu_map_save">Save Map</string>
+    <string name="menu_map_share">Share Map</string>
+    <string name="menu_map_settings">Map Settings</string>
+    <string name="heading_map_interval">Map Interval</string>
+    <string name="text_map_interval_spinner">Map locations during last: </string>
+    <string name="my_location">Location</string>
+    <string name="data_SD_error">Error writing file to SD card.</string>
+    <string name="data_SD_unavailable">SD Card Not Available - file cannot be saved.</string>
+    <string name="data_saved">Data saved as </string>
+    <string name="withdraw_error">All Space Mapper data has been deleted from your phone, but an error occurred while trying to contact the Space Mapper server. Please check your internet connection and try again.</string>
+    <string name="cancel">Cancel</string>
+    <string name="withdraw_warning_yes">Yes, withdraw and delete data now</string>
+    <string name="withdraw_warning">WARNING: All of the Space Mapper data you have saved on your phone\'s internal memory and all data sent to the Space Mapper server will be deleted. This cannot be undone. Are you sure you wish to proceed?</string>
+    <string name="new_fix_blinker">New Fix!</string>
+    <string name="time_label">Time and Date: </string>
+    <string name="lat_label">Latitude: </string>
+    <string name="lon_label">Longitude: </string>
+    <string name="alt_label">Altitude (m): </string>
+    <string name="acc_label">Accuracy (m): </string>
+    <string name="prov_label">Provider: </string>
+    <string name="list_my_data_heading">My Data List</string>
+    <string name="list_data_button">View Raw Data</string>
+    <string name="my_data_heading">My Data</string>
+    <string name="GPL">View GPL</string>
+    <string name="LGPL">View LGPL</string>
+    <string name="menu_center_map">Re-Center</string>
+    <string name="menu_toggle_view">Toggle Sat./Map</string>
+    <string name="data_off_alert">Store My Data is currently off. Click here to go to the Preferences menu and turn it on</string>
+    <string name="noGPSAlert">"Your GPS receiver is disabled. Do you want to enable it?".</string>
+    <string name="noGPSnoNetAlert">Your GPS and network location receivers are both disabled. Space Mapper will not be able to locate without at least one of these. Do you want to enable them?</string>
+    <string name="noGPS">Your GPS receiver is off. \nPlease click here to turn it on.</string>
+    <string name="noGPSnoNet">Space Mapper cannot locate you because your GPS and network location receivers are both off. \nPlease click here to turn them on.</string>
+    <string name="consent_date_prompt">You indicated your consent by clicking the Consent button at the time and date shown below. You may withdraw your consent at any time by using the Activity-Space Project/Withdraw menu.</string>
+    <string name="delete_mydata_query">Would you like to delete any Space Mapper data already stored on your phone?</string>
+    <string name="more_data_later">More data analysis tools will be included in future updates</string>
+    <string name="help">Help</string>
+    <string name="user_guide">User Guide</string>
+    <string name="faqs">FAQs</string>
+    <string name="about">About</string>
+    <string name="review_consent">Consent Form</string>
+    <string name="contact">Contact</string>
+    <string name="withdraw_consent">Withdraw</string>
+    <string name="contact_heading">Contact</string>
+    <string name="thanks_for_interest">Thank you for your interest!</string>
+    <string name="ok">OK</string>
+    <string name="underage_message">You must be at least 18 to volunteer as a Space Mapper research subject, but you are welcome to visit our website to learn more or to contact us with any questions or suggestions.</string>
+    <string name="project_website">www.princeton.edu/~jrpalmer/spacemapper</string>
+    <string name="project_email">activity.space.project@gmail.com</string>
+    <string name="menu_locate_now">Locate Now</string>
+    <string name="menu_upload_now">Upload Now</string>
+    <string name="intro_button_over">I am at least 18 years old</string>
+    <string name="intro_button_under">I am under 18 years old.</string>
+    <string name="intro_heading">Welcome to Space Mapper</string>
+    <string name="intro_subheading">Introduction</string>
+    <string name="main_text_off">Space Mapper is off. \nClick here to turn it back on.</string>
+    <string name="location_found">LOCATION FOUND</string>
+    <string name="checking_location">Locating</string>
+    <string name="countdown_text">Countdown to next measurement:</string>
+    <string name="main_text">Thank you for participating! \n\nYou can exit at any time and Space Mapper will continue to work in the background. \n\nUse the menu button for more options.</string>
+    <string name="heading_mydata_spinner">Storage Period</string>
+    <string name="text_mydata_spinner">Store data for how many days?</string>
+    <string name="heading_mydata_button">Store Data</string>
+    <string name="text_mydata_button">Store data on the phone?</string>
+    <string name="user_id">User ID:</string>
+    <string name="withdraw_lock_heading">Withdrawn</string>
+    <string name="withdraw_lock_subheading"></string>
+    <string name="withdraw_lock_text">You have withdrawn from the study and deleted all Space Mapper data on your phone and on the server. For future reference, the code below is the unique user ID that was assigned to you while you were participating. If you would like to participate in the study in the future, you will need to reinstall the app on your phone and you will be automatically assigned a new user ID. </string>
+    <string name="withdraw_delete_button">Withdraw and Delete All Data</string>
+    <string name="withdraw_delete_text">Click here to withdraw from the study and permanently delete all Space Mapper data from your phone and from the research server. You will need to have an internet connection to complete this step.</string>
+    <string name="withdraw_heading">Withdraw</string>
+    <string name="withdraw_subheading"></string>
+    <string name="save_data_button">Save Data to SD Card</string>
+    <string name="map_data_button">Map Data</string>
+    <string name="save_data_prompt">Save to SD card as comma separated value file.</string>
+    <string name="map_data_prompt">View data on map.</string>
+    <string name="app_name" translatable="false">Space Mapper</string>
+    <string name="RegistrationHeading">Registration</string>
+    <string name="RegistrationSubHeading">Please Fill Out This Initial Survey</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="male">male</string>
+    <string name="female">female</string>
+    <string name="married_prompt">Are you married?</string>
+    <string name="kids_prompt">How many children do you have who live with you?</string>
+    <string name="race_prompt">Race/Ethnicity</string>
+    <string name="race_subprompt">Please mark one or more boxes depending on how you identify yourself. (Categories are based on those used by the U.S. Census Bureau.)</string>
+    <string name="race_white">White</string>
+    <string name="race_black">Black, African American, or Negro</string>
+    <string name="race_latino">Hispanic/Latino/Spanish</string>
+    <string name="race_native_american">American Indian or Alaska Native</string>
+    <string name="race_asian">Asian</string>
+    <string name="race_other">Other</string>
+    <string name="specify">please specify:</string>
+    <string name="pob_prompt">In which country were you born?</string>
+    <string name="por_prompt">In which country do you currently reside?</string>
+    <string name="entryyear_prompt">When did you first move to your country of residence?</string>
+    <string name="entryyear_prompt_short">Year you first moved to country of residence:</string>
+    <string name="cit_prompt">Are you a citizen of the country in which you reside?</string>
+    <string name="heading_language">Language</string>
+    <string name="text_language_spinner">Change app language</string>
+    <string name="heading_interval">Fix Interval</string>
+    <string name="on_off">On/Off</string>
+    <string name="menu_settings">Preferences</string>
+    <string name="menu_data">My Data</string>
+    <string name="menu_help">Help</string>
+    <string name="SplashHeading">Space Mapper</string>
+    <string name="SexPrompt">Sex:</string>
+    <string name="born_res_prompt">Were you born in the same country in which you curently reside?</string>
+    <string name="age_prompt">Age:</string>
+    <string name="AgeHint">enter your age</string>
+    <string name="lang_prompt">What language do you primarily speak at home?</string>
+    <string name="ed_prompt">Highest degree or level of school completed:</string>
+    <string name="inc_prompt">What was your total household income during the past 12 months?</string>
+    <string name="inc_prompt_short">Total household income during past 12 months:</string>
+    <string name="nhousehold_prompt">How many members are in your household, including yourself?</string>
+    <string name="nhousehold_prompt_short">Members in household, including yourself:</string>
+    <string name="emp_prompt">Employment Status:</string>
+    <string name="save_reg_label">Submit Responses</string>
+    <string name="service_is_on">Space Mapper is on</string>
+    <string name="service_is_off">Space Mapper is off</string>
+    <string name="text_interval_spinner">Measure location every: </string>
+    <string name="banner_image_content_description">Space Mapper Icon</string>
+    <string name="consent_heading">Consent Form</string>
+    <string name="consent_instructions">Please read the following consent form. You may electronically sign the form, indicating your consent, by clicking on the "Consent" button at the bottom of this screen. Any questions may be addressed to activity.space.project@gmail.com.</string>
+    <string name="consent_signature_button">Consent</string>
+    <string name="nfixes_text">Recorded:</string>
+    <string name="nuploads_text">Uploaded:</string>
+    <string name="thankyou">Thank you for participating!</string>
+    <string name="consent_decline_button">Decline</string>
+    <string name="intro_text">
+<![CDATA[
+<p>Thank you for installing the app! Space Mapper is part of an academic study on the spaces people move through as they go about their daily activities. If you volunteer to participate in this study, Space Mapper will record your phone\'s location at regular intervals and send this information to researchers at Princeton University. It will also ask you to complete an initial demographic survey when you start using the application and a debriefing survey when you finish.</p>
+<p>All of the information you provide will be encrypted and kept confidential. The only people with access to it will be the Space Mapper researchers, and only anonymized results will be shared beyond the research team. You may withdraw from the study at any time and request that all of your data be deleted from the research server.</p>
+<p>If you participate in the study, you will be contributing to science and helping to advance our understanding of human movement and spatial segregation. You will also be able to map and analyze your own movement patterns and learn more about the spaces you frequent.</p>
+<p>You must be at least 18 years old to participate.</p>
+<p>If you have any questions, please visit our website our email us at the addresses listed below</p>
+<p>If you would like to continue, please read and electronically sign the consent form on the next page. We really appreciate your interest and participation!</p>
+<p>Copyright &#169; 2012, 2013 John R.B. Palmer</p>
+ 
+<p> This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License
+    along with this program.  If not, see http://www.gnu.org/licenses.</p>
+
+<p>This program incorporates code from the Human Mobility Project, written by Chang Y. Chung, 
+Kathleen Li, and Necati E. Ozgencil, which is subject to the following terms:</p>
+
+<blockquote><p>Copyright &#169; 2010, 2011 Human Mobility Project</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p></blockquote>
+
+<p>This program also incorporates code from Funf, which is subject to the following terms:</p>
+
+
+<blockquote> <p> 		Funf: Open Sensing Framework<br/>
+ 		Copyright &#169; 2010-2011 Nadav Aharony, Wei Pan, Alex Pentland.<br/> 
+  		Acknowledgments: Alan Gardner<br/>
+  		Contact: nadav@media.mit.edu</p>
+  
+<p>  		Funf is free software: you can redistribute it and/or modify
+  		it under the terms of the GNU Lesser General Public License as 
+  		published by the Free Software Foundation, either version 3 of 
+  		the License, or (at your option) any later version. </p>
+  
+<p> 		Funf is distributed in the hope that it will be useful, but 
+  		WITHOUT ANY WARRANTY; without even the implied warranty of 
+  		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+  		See the GNU Lesser General Public License for more details.</p></blockquote>
+
+<p>This program also incorporates code from range-seek-bar, written by Stephan Tittel, Peter Sinnott, and Thomas Barrasso, which is subject to the following terms:</p>
+
+
+<blockquote><p>Copyright 2013 Stephan Tittel, Peter Sinnott, and Thomas Barrasso</p>
+ <p>Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at</p>
+<p>       http://www.apache.org/licenses/LICENSE-2.0</p>
+<p>   Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.</p></blockquote>
+
+
+]]>
+    </string>
+    <string name="about_html">
+<![CDATA[
+<p>Space Mapper version 2.05</p>
+
+<p>Space Mapper lets you map the spaces you move 
+through as you go about your daily activities. It was written by John R.B.
+Palmer based in part on code from the Human Mobility Project, written by Chang Y. Chung, 
+Kathleen Li, and Necati E. Ozgencil, from Funf, written by Nadav Aharony, Wei Pan, and Alex Pentland, and from range-seek-bar, written by Stephan Tittel, Peter Sinnott, and Thomas Barrasso.
+The Space Mapper source code is available at the website listed below.</p>
+
+<p>Copyright &#169; 2012, 2013 John R.B. Palmer</p>
+ 
+<p> This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License
+    along with this program.  If not, see http://www.gnu.org/licenses.</p>
+
+<p>The code incorporated from the Human Mobility Project is subject to the following terms:</p>
+
+<blockquote><p>Copyright &#169; 2010, 2011 Human Mobility Project</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p></blockquote>
+
+<p>The code incorporated from Funf is subject to the following terms:</p>
+
+
+<blockquote> <p> 		Funf: Open Sensing Framework<br/>
+ 		Copyright &#169; 2010-2011 Nadav Aharony, Wei Pan, Alex Pentland.<br/> 
+  		Acknowledgments: Alan Gardner<br/>
+  		Contact: nadav@media.mit.edu</p>
+  
+<p>  		Funf is free software: you can redistribute it and/or modify
+  		it under the terms of the GNU Lesser General Public License as 
+  		published by the Free Software Foundation, either version 3 of 
+  		the License, or (at your option) any later version. </p>
+  
+<p> 		Funf is distributed in the hope that it will be useful, but 
+  		WITHOUT ANY WARRANTY; without even the implied warranty of 
+  		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+  		See the GNU Lesser General Public License for more details.</p></blockquote>
+
+<p>The code incorporated from range-seek-bar is subject to the following terms:</p>
+
+<blockquote> <p>
+  Copyright 2013 Stephan Tittel, Peter Sinnott, and Thomas Barrasso</p>
+
+   <p>Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at</p>
+
+<p>       http://www.apache.org/licenses/LICENSE-2.0</p>
+
+<p>   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.</p></blockquote>  
+
+    ]]>
+    </string>
+    <string name="faqs_html">
+<![CDATA[
+<p><b>How do I participate in the research? </b></p>
+
+Just install the application on your phone, open it, and respond to the consent and registration questions. After that, make sure your phone\'s GPS and/or network location receiver is enabled and go about your normal activities. The application will run in the background and it will send your location information to the research server at regular intervals.
+
+<p><b>Will I receive compensation for my participation?</b></p>
+ 
+No, but you will be able to store and map your own locations and you will be contributing to science.
+ 
+<p><b>Can I withdraw from the study and uninstall the application if I don\'t like it?</b></p>
+ 
+Yes. Your participation is entirely voluntary and you may end it whenever you wish. To stop participating, simply switch the application off from the application\'s Preferences menu or uninstall it using your phone\'s Settings menu. If you would like to delete all of your data from the research server, use the withdraw button from the application\'s Activity-Space Project menu.
+
+<p><b>What information will I be sharing with others and how will my identity be protected?</b></p>
+
+The application transmits the following information to the research server: (1) the date and time of your consent, (2) any answers you provide to the initial registration survey, (3) your phone\'s language settings, (4) any answers you provide to the follow-up survey, and (5) regular location updates consisting of latitude, longitude, altitude, accuracy, location provider (i.e. GPS or network), battery status, and time. This is the only information that is collected, it is encrypted on your phone before being sent to the server, and it is decrypted and analyzed by the research team only after being taken off the server. Your information will be used only for the purpose of studying population level questions about mobility and segregation and it will not be shared with anyone outside the research team except to the extent that it has first been aggregated and/or transformed in such a way as to make it impossible for you to be identified. 
+
+<p><b>Are there any restrictions on who may participate?</p></b> 
+
+Yes -- you must be at least 18 years old to participate. In addition, the application will work only on devices running Android. 
+
+<p><b>Is it dangerous to use my phone while driving?</b></p>
+ 
+Yes -- please don\'t! The use of mobile phones while driving can create an increased risk of injury, death, or other harm and is prohibited in many states. We therefore ask that you please refrain from interacting with your phone while driving.  
+
+<p><b>Why do you collect information about my battery?</b></p>
+
+To help us improve the application. The application is designed to be as minimally intrusive as possible, so if we see that it is placing a heavy load on your battery, we will do our best to fix this in future updates.
+
+<p><b>How can I use my own location information?</b></p>
+
+From the application\'s Preferences menu, set the Store My Data option to \"yes\" and choose how much of your information you would like to store by picking from the Storage Period spinner. You locations will be stored on your phone during the period you select, and you will be able to map them and save them to your SD card from the My Data menu. Note that the information you choose to store on your phone for your own use is not encrypted. 
+
+<p><b>When I map my data, some of the locations look wrong. Why is that?</b></p>
+
+The accuracy of your phone\'s location estimates depends on a number of factors, including access to GPS satellite signals and connection to wireless networks. The application is designed to balance accuracy against battery load, so it will sometimes use location estimates that have a large margin of error.
+
+<p><b>Why is the application not recording my location?</b></p>
+
+This could be because it is not turned on, because neither your GPS nor your network location receivers are enabled, or because your phone is simply unable to detect your location in a given place within the minimum accuracy required by the application.
+
+<p><b>Why is the application not uploading my locations to the server?</b></p>
+
+This could be because your phone does not have an internet connection. Once you are sure the phone is connected to the internet, try cliking \"Upload Now\" from the main menu.
+
+<p><b>Who should I contact if I have additional questions?</b></p>
+ 
+John Palmer is the principal investigator for this project and a Ph.D. student at Princeton\'s Woodrow Wilson School and Office of Population Research. For any questions about this project, please contact him at the email address shown below.
+
+    ]]>
+    </string>
+    <string name="consent_text">
+<![CDATA[
+<p><b>STANDARD ADULT CONSENT FORM</b></p>
+<p>PRINCETON UNIVERSITY INSTITUTIONAL REVIEW BOARD</p>
+<p>TITLE OF RESEARCH: Activity-Space Project</p>
+<p>INVESTIGATOR: John Palmer</p>
+<p>The following informed consent is required by Princeton University for any person
+involved in a research study conducted by investigators at the University. This study has been
+approved by the University\'s Institutional Review Board for Human Subjects.</p>
+<p>You have:</p>
+<p>A. Provided me with a detailed explanation of the procedures to be followed in the
+project, including an identification of those which are experimental.</p>
+<p><b><i>I understand that I must be at least 18 years of age to participate in this project.
+I understand that I will be asked to run an application on my mobile phone and
+that this application will transmit information about my physical location and movement and my phone\'s battery status and language settings, as
+well my answers to survey questions to researchers at Princeton
+University.</p>
+<p>I understand that the use of mobile phones while driving can create an
+increased risk of injury, death, or other harm and is prohibited in many states. I
+understand that I am expected to refrain from interacting with the application
+or using my mobile phone in any way for this project while driving, and I agree
+not to do so. I also understand that safety is the top priority in all aspects of this
+project and I agree to use my phone in a safe manner at all times.</p>
+<p>I understand that the purpose of this research is to learn about human
+movement and spatial segregation; while I will receive no compensation for my
+participation, I will be allowed to view and make use of my own information,
+including location estimates and maps of my own movement patterns. I
+understand that reasonable steps will be taken to protect all identifying
+information I transmit from disclosure to any parties other than the research team
+and myself and that my information will be used only for scientific purposes.
+Finally, I understand that the research team will remove and delete all of the
+information I have transmitted if I make such a request through the "Withdraw" section of the application\'s Help menu.</b></i></p>
+<p>B. Answered any questions that I have regarding the study.</p>
+<p>I understand that:</p>
+<p>A. My participation is voluntary, and I may withdraw my consent and discontinue
+participation in the project at any time. My refusal to participate will not result in
+any penalty.</p>
+<p>B. By indicating my consent on this form, I do not waive any legal rights or release
+Princeton University, its agents, or you from liability for negligence.</p>
+<p>I hereby give my consent to be the subject of your research.</p>
+        ]]>
+    </string>
+    <string name="contact_info">
+<![CDATA[
+<p><b>TITLE OF RESEARCH: Activity-Space Project</b></p>
+<p><b>For answers to any questions you may have about this research, contact:</b></p>
+<p>PRINCIPAL INVESTIGATOR:</p>
+John Palmer<br/>
+Office of Population Research<br/>
+Wallace Hall<br/>
+Princeton University<br/>
+Princeton, NJ 08644
+
+<p><b>For answers to any questions you may have about your rights as a research subject,
+contact:</b></p>
+Princeton University Office of Research Integrity and Assurance<br/> 
+Compliance Administrator<br/>
+Email: irb@princeton.edu<br/> 
+Phone: (609) 258-3077 
+     ]]>
+    </string>
+    <string name="user_guide_html" translatable="FALSE">
+<![CDATA[
+under constuction
+     ]]>
+    </string>
+
+    <string-array name="countries_array">
+        <item></item>
+        <item>United States</item>
+        <item>Spain</item>
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>American Samoa</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Anguilla</item>
+        <item>Antarctica</item>
+        <item>Antigua and Barbuda</item>
+        <item>Argentina</item>
+        <item>Armenia</item>
+        <item>Aruba</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Azerbaijan</item>
+        <item>Bahrain</item>
+        <item>Bangladesh</item>
+        <item>Barbados</item>
+        <item>Belarus</item>
+        <item>Belgium</item>
+        <item>Belize</item>
+        <item>Benin</item>
+        <item>Bermuda</item>
+        <item>Bhutan</item>
+        <item>Bolivia</item>
+        <item>Bosnia and Herzegovina</item>
+        <item>Botswana</item>
+        <item>Bouvet Island</item>
+        <item>Brazil</item>
+        <item>British Indian Ocean Territory</item>
+        <item>British Virgin Islands</item>
+        <item>Brunei</item>
+        <item>Bulgaria</item>
+        <item>Burkina Faso</item>
+        <item>Burundi</item>
+        <item>Cambodia</item>
+        <item>Cameroon</item>
+        <item>Canada</item>
+        <item>Cape Verde</item>
+        <item>Cayman Islands</item>
+        <item>Central African Republic</item>
+        <item>Chad</item>
+        <item>Chile</item>
+        <item>China</item>
+        <item>Christmas Island</item>
+        <item>Cocos (Keeling) Islands</item>
+        <item>Colombia</item>
+        <item>Comoros</item>
+        <item>Congo</item>
+        <item>Cook Islands</item>
+        <item>Costa Rica</item>
+        <item>Cote d\'Ivoire</item>
+        <item>Croatia</item>
+        <item>Cuba</item>
+        <item>Cyprus</item>
+        <item>Czech Republic</item>
+        <item>Democratic Republic of the Congo</item>
+        <item>Denmark</item>
+        <item>Djibouti</item>
+        <item>Dominica</item>
+        <item>Dominican Republic</item>
+        <item>East Timor</item>
+        <item>Ecuador</item>
+        <item>Egypt</item>
+        <item>El Salvador</item>
+        <item>Equatorial Guinea</item>
+        <item>Eritrea</item>
+        <item>Estonia</item>
+        <item>Ethiopia</item>
+        <item>Faeroe Islands</item>
+        <item>Falkland Islands</item>
+        <item>Fiji</item>
+        <item>Finland</item>
+        <item>Former Yugoslav Republic of Macedonia</item>
+        <item>France</item>
+        <item>French Guiana</item>
+        <item>French Polynesia</item>
+        <item>French Southern Territories</item>
+        <item>Gabon</item>
+        <item>Georgia</item>
+        <item>Germany</item>
+        <item>Ghana</item>
+        <item>Gibraltar</item>
+        <item>Greece</item>
+        <item>Greenland</item>
+        <item>Grenada</item>
+        <item>Guadeloupe</item>
+        <item>Guam</item>
+        <item>Guatemala</item>
+        <item>Guinea</item>
+        <item>Guinea-Bissau</item>
+        <item>Guyana</item>
+        <item>Haiti</item>
+        <item>Heard Island and McDonald Islands</item>
+        <item>Honduras</item>
+        <item>Hong Kong</item>
+        <item>Hungary</item>
+        <item>Iceland</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Iran</item>
+        <item>Iraq</item>
+        <item>Ireland</item>
+        <item>Israel</item>
+        <item>Italy</item>
+        <item>Jamaica</item>
+        <item>Japan</item>
+        <item>Jordan</item>
+        <item>Kazakhstan</item>
+        <item>Kenya</item>
+        <item>Kiribati</item>
+        <item>Kuwait</item>
+        <item>Kyrgyzstan</item>
+        <item>Laos</item>
+        <item>Latvia</item>
+        <item>Lebanon</item>
+        <item>Lesotho</item>
+        <item>Liberia</item>
+        <item>Libya</item>
+        <item>Liechtenstein</item>
+        <item>Lithuania</item>
+        <item>Luxembourg</item>
+        <item>Macau</item>
+        <item>Madagascar</item>
+        <item>Malawi</item>
+        <item>Malaysia</item>
+        <item>Maldives</item>
+        <item>Mali</item>
+        <item>Malta</item>
+        <item>Marshall Islands</item>
+        <item>Martinique</item>
+        <item>Mauritania</item>
+        <item>Mauritius</item>
+        <item>Mayotte</item>
+        <item>Mexico</item>
+        <item>Micronesia</item>
+        <item>Moldova</item>
+        <item>Monaco</item>
+        <item>Mongolia</item>
+        <item>Montserrat</item>
+        <item>Morocco</item>
+        <item>Mozambique</item>
+        <item>Myanmar</item>
+        <item>Namibia</item>
+        <item>Nauru</item>
+        <item>Nepal</item>
+        <item>Netherlands</item>
+        <item>Netherlands Antilles</item>
+        <item>New Caledonia</item>
+        <item>New Zealand</item>
+        <item>Nicaragua</item>
+        <item>Niger</item>
+        <item>Nigeria</item>
+        <item>Niue</item>
+        <item>Norfolk Island</item>
+        <item>North Korea</item>
+        <item>Northern Marianas</item>
+        <item>Norway</item>
+        <item>Oman</item>
+        <item>Pakistan</item>
+        <item>Palau</item>
+        <item>Panama</item>
+        <item>Papua New Guinea</item>
+        <item>Paraguay</item>
+        <item>Peru</item>
+        <item>Philippines</item>
+        <item>Pitcairn Islands</item>
+        <item>Poland</item>
+        <item>Portugal</item>
+        <item>Puerto Rico</item>
+        <item>Qatar</item>
+        <item>Reunion</item>
+        <item>Romania</item>
+        <item>Russia</item>
+        <item>Rwanda</item>
+        <item>Sao Tome and Principe</item>
+        <item>Saint Helena</item>
+        <item>Saint Kitts and Nevis</item>
+        <item>Saint Lucia</item>
+        <item>Saint Pierre and Miquelon</item>
+        <item>Saint Vincent and the Grenadines</item>
+        <item>Samoa</item>
+        <item>San Marino</item>
+        <item>Saudi Arabia</item>
+        <item>Senegal</item>
+        <item>Seychelles</item>
+        <item>Sierra Leone</item>
+        <item>Singapore</item>
+        <item>Slovakia</item>
+        <item>Slovenia</item>
+        <item>Solomon Islands</item>
+        <item>Somalia</item>
+        <item>South Africa</item>
+        <item>South Georgia and the South Sandwich Islands</item>
+        <item>South Korea</item>
+        <item>Spain</item>
+        <item>Sri Lanka</item>
+        <item>Sudan</item>
+        <item>Suriname</item>
+        <item>Svalbard and Jan Mayen</item>
+        <item>Swaziland</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>Syria</item>
+        <item>Taiwan</item>
+        <item>Tajikistan</item>
+        <item>Tanzania</item>
+        <item>Thailand</item>
+        <item>The Bahamas</item>
+        <item>The Gambia</item>
+        <item>Togo</item>
+        <item>Tokelau</item>
+        <item>Tonga</item>
+        <item>Trinidad and Tobago</item>
+        <item>Tunisia</item>
+        <item>Turkey</item>
+        <item>Turkmenistan</item>
+        <item>Turks and Caicos Islands</item>
+        <item>Tuvalu</item>
+        <item>Virgin Islands</item>
+        <item>Uganda</item>
+        <item>Ukraine</item>
+        <item>United Arab Emirates</item>
+        <item>United Kingdom</item>
+        <item>United States</item>
+        <item>United States Minor Outlying Islands</item>
+        <item>Uruguay</item>
+        <item>Uzbekistan</item>
+        <item>Vanuatu</item>
+        <item>Vatican City</item>
+        <item>Venezuela</item>
+        <item>Vietnam</item>
+        <item>Wallis and Futuna</item>
+        <item>Western Sahara</item>
+        <item>Yemen</item>
+        <item>Yugoslavia</item>
+        <item>Zambia</item>
+        <item>Zimbabwe</item>
+    </string-array>
+    <string-array name="langs_array">
+        <item></item>
+        <item>English (en)</item>
+        <item>Español (es)</item>
+        <item>Català (ca)</item>
+        <item>Euskara (eu)</item>
+        <item>Galego (gl)</item>
+        <item>Asturianu (ast)</item>
+        <item>Aragonés (an)</item>
+        <item>Afrikaans (af)</item>
+        <item>Alemannisch (als)</item>
+        <item>Aragonés (an)</item>
+        <item>Armâneashti (roa-rup)</item>
+        <item>Asturianu (ast)</item>
+        <item>Avañe\'ẽ (gn)</item>
+        <item>Aymar (ay)</item>
+        <item>Azerbaycan dili (az)</item>
+        <item>Bahasa Indonesia (id)</item>
+        <item>Bahasa Melayu (ms)</item>
+        <item>Bahsa Acèh (ace)</item>
+        <item>Bamanankan (bm)</item>
+        <item>Bân-lâm-gú (zh-min-nan)</item>
+        <item>Basa Banyumasan (map-bms)</item>
+        <item>Basa Jawa (jv)</item>
+        <item>Basa Sunda (su)</item>
+        <item>Basa Ugi (bug)</item>
+        <item>Bikol (bi)</item>
+        <item>Bislama (bi)</item>
+        <item>Boarisch (bar)</item>
+        <item>Bosanski (bs)</item>
+        <item>Brezhoneg (br)</item>
+        <item>Català (ca)</item>
+        <item>Chavacano (cbk-zam)</item>
+        <item>Chamorru (ch)</item>
+        <item>Čeština (cs)</item>
+        <item>chiChewa (ny)</item>
+        <item>chiShona (sn)</item>
+        <item>chiTumbuka (tum)</item>
+        <item>chiVenda (ve)</item>
+        <item>Corsu (co)</item>
+        <item>Cuengh (za)</item>
+        <item>Cymraeg (cy)</item>
+        <item>Dansk (da)</item>
+        <item>Deitsch (pdc)</item>
+        <item>Deutsch (de)</item>
+        <item>Diné bizaad (nv)</item>
+        <item>dorerin Naoero (na)</item>
+        <item>Dzhudezmo (lad)</item>
+        <item>Eesti (et)</item>
+        <item>English (en)</item>
+        <item>Español (es)</item>
+        <item>Esperanto (eo)</item>
+        <item>Estremeñu (ext)</item>
+        <item>Euskara (eu)</item>
+        <item>Faka Tonga (to)</item>
+        <item>Føroyskt (fo)</item>
+        <item>Français (fr)</item>
+        <item>Franco-provençal (frp)</item>
+        <item>Frysk (fy)</item>
+        <item>Fulfulde (ff)</item>
+        <item>Furlan (fur)</item>
+        <item>Gaeilge (ga)</item>
+        <item>Gaelg (gv)</item>
+        <item>Gagana Samoa (sm)</item>
+        <item>Gàidhlig (gd)</item>
+        <item>Galego (gl)</item>
+        <item>Gutisk (got)</item>
+        <item>Hak-kâ-fa / 客家話 (hak)</item>
+        <item>Hawaiian (haw)</item>
+        <item>Hornjoserbšćina (hsb)</item>
+        <item>Hrvatski (hr)</item>
+        <item>Ido (io)</item>
+        <item>Igbo (ig)</item>
+        <item>Ilokano (ilo)</item>
+        <item>Interlingua (ia)</item>
+        <item>Interlingue (ie)</item>
+        <item>Iñupiak (ik)</item>
+        <item>isiXhosa (xh)</item>
+        <item>isiZulu (zu)</item>
+        <item>Íslenska (is)</item>
+        <item>Italiano (it)</item>
+        <item>Kajin Majel (mh)</item>
+        <item>Kalaallisut (kl)</item>
+        <item>Kapampangan (pam)</item>
+        <item>Kaszëbsczi (csb)</item>
+        <item>Kernewek / Karnuack (kw)</item>
+        <item>Kikongo (kg)</item>
+        <item>Kikuyu (ki)</item>
+        <item>Kinyarwandi (rw)</item>
+        <item>Kırgızca / Кыргызча (ky)</item>
+        <item>Kirundi (rn)</item>
+        <item>Kiswahili (sw)</item>
+        <item>Kreyòl ayisyen (ht)</item>
+        <item>Kurdî (ku)</item>
+        <item>Latina (la)</item>
+        <item>Latviešu (lv)</item>
+        <item>Lëtzebuergesch (lb)</item>
+        <item>Lietuvių (lt)</item>
+        <item>Líguru (lij)</item>
+        <item>Limburgs (li)</item>
+        <item>Lingála (ln)</item>
+        <item>Lojban (jbo)</item>
+        <item>Luganda (lg)</item>
+        <item>Lumbaart (lmo)</item>
+        <item>Magyar (hu)</item>
+        <item>Malagasy (mg)</item>
+        <item>Malti (mt)</item>
+        <item>Māori (mi)</item>
+        <item>Min Dong (cdo)</item>
+        <item>Myanmasa (my)</item>
+        <item>Nāhuatl (nah)</item>
+        <item>Na Vosa Vakaviti (fj)</item>
+        <item>Nederlands (nl)</item>
+        <item>Nehiyaw (cr)</item>
+        <item>Neré (ne)</item>
+        <item>Nnapulitano (nap)</item>
+        <item>Nordfriisk (frr)</item>
+        <item>Norfuk (pih)</item>
+        <item>Norsk bokmål (no)</item>
+        <item>Norsk nynorsk (nn)</item>
+        <item>Nouormand / Normaund (nrm)</item>
+        <item>Occitan (oc)</item>
+        <item>Oromifaa (om)</item>
+        <item>Pāli (pi)</item>
+        <item>Pangasinán (pag)</item>
+        <item>Papiamentu (pap)</item>
+        <item>Piemontèis (pms)</item>
+        <item>Plattdüütsch (nds)</item>
+        <item>Polski (pl)</item>
+        <item>Português (pt)</item>
+        <item>Reo Mā`ohi (ty)</item>
+        <item>Ripoarisch (ksh)</item>
+        <item>Română (ro)</item>
+        <item>Rromani (rmy)</item>
+        <item>Rumantsch (rm)</item>
+        <item>Runa Simi (qu)</item>
+        <item>Sámegiella (se)</item>
+        <item>Sängö (sg)</item>
+        <item>Sardu (sc)</item>
+        <item>Scots (sco)</item>
+        <item>seSotho (st)</item>
+        <item>Setswana (tn)</item>
+        <item>Shqip (sq)</item>
+        <item>Sicilianu (scn)</item>
+        <item>Sinugboanong Binisaya (ceb)</item>
+        <item>SiSwati (ss)</item>
+        <item>Slovenčina (sk)</item>
+        <item>Slovenščina (sl)</item>
+        <item>Soomaaliga (so)</item>
+        <item>Srpskohrvatski / Српскохрватски (sh)</item>
+        <item>Suomi (fi)</item>
+        <item>Svenska (sv)</item>
+        <item>Tagalog (tl)</item>
+        <item>Tatarça (tt)</item>
+        <item>Tetun (tet)</item>
+        <item>Tiếng Việt (vi)</item>
+        <item>Tok Pisin (tpi)</item>
+        <item>Tsetsêhestâhese (chy)</item>
+        <item>Türkçe (tr)</item>
+        <item>Türkmençe (tk)</item>
+        <item>Twi (tw)</item>
+        <item>Vèneto (vec)</item>
+        <item>Volapük (vo)</item>
+        <item>Võro (fiu-vro)</item>
+        <item>Walon (wa)</item>
+        <item>West-Vlams (vls)</item>
+        <item>Winaray (war)</item>
+        <item>Wollof (wo)</item>
+        <item>Xitsonga (ts)</item>
+        <item>Yorùbá (yo)</item>
+        <item>Zeêuws (zea)</item>
+        <item>Ελληνικά (el)</item>
+        <item>Авар (av)</item>
+        <item>Аҧсуа бызшәа (ab)</item>
+        <item>Башҡорт (ba)</item>
+        <item>Беларуская (be)</item>
+        <item>Български (bg)</item>
+        <item>Словѣньскъ (cu)</item>
+        <item>Иронау (os)</item>
+        <item>Қазақша (kk)</item>
+        <item>Коми (kv)</item>
+        <item>Македонски (mk)</item>
+        <item>Монгол (mn)</item>
+        <item>Нохчийн (ce)</item>
+        <item>Русский (ru)</item>
+        <item>Српски / Srpski (sr)</item>
+        <item>Тоҷикӣ (tg)</item>
+        <item>Удмурт (udm)</item>
+        <item>Українська (uk)</item>
+        <item>Ўзбек (uz)</item>
+        <item>Хальмг (xal)</item>
+        <item>Чӑваш (cv)</item>
+        <item>Armenian (hy)</item>
+        <item>Georgian (ka)</item>
+        <item>Hebrew (he)</item>
+        <item>Yiddish (yi)</item>
+        <item>Arabic (ar)</item>
+        <item>fārsi (fa)</item>
+        <item>Yaren Hausa (ha)</item>
+        <item>Pashto (pa)</item>
+        <item>Sindhi (sd)</item>
+        <item>Urdu (ur)</item>
+        <item>Uyghur (ug)</item>
+        <item>Bangla (bn)</item>
+        <item>Gujarātī (gu)</item>
+        <item>Bhojpuri (bh)</item>
+        <item>Hindi (hi)</item>
+        <item>Koshur / Kashmiri (ks)</item>
+        <item>Kanarese / Kannada (kn)</item>
+        <item>Nepali (ne)</item>
+        <item>Malayalam / malayāḷam (ml)</item>
+        <item>Punjabi (pa)</item>
+        <item>Tamil / Thamizh (ta)</item>
+        <item>Telugu (te)</item>
+        <item>Tibetan (bo)</item>
+        <item>Dzongkha (dz)</item>
+        <item>Sinhala (si)</item>
+        <item>Khmer (km)</item>
+        <item>Lao (lo)</item>
+        <item>Thai (th)</item>
+        <item>Amharic (am)</item>
+        <item>Tigrinya (ti)</item>
+        <item>Inuktitut (iu)</item>
+        <item>한국어 (ko)</item>
+        <item>日本語 (ja)</item>
+        <item>中文 (zh)</item>
+        <item>吴语 (wuu)</item>
+        <item>文言 (lzh)</item>
+        <item>粵語 (yue)</item>
+        <item>other language</item>
+    </string-array>
+    <string-array name="ed_array">
+        <item></item>
+        <item>No schooling completed</item>
+        <item>Primary / elementary school</item>
+        <item>High school (diploma or equivalent, such as GED)</item>
+        <item>One or more years of college</item>
+        <item>Associates degree (e.g., AA, AS)</item>
+        <item>Bachelor\'s degree (e.g., BA, AB, BS)</item>
+        <item>Master\'s degree (e.g., MA, MS, MEng, MEd, MSW, MBA)</item>
+        <item>Professional degree (e.g., MD, DDS, DVM, LLB, JD)</item>
+        <item>Doctorate degree (e.g., PhD, EdD)</item>
+    </string-array>
+    <string-array name="incs_array">
+        <item></item>
+        <item>Less than $10,000</item>
+        <item>$10,000 to $19,000</item>
+        <item>$20,000 to $29,000</item>
+        <item>$30,000 to $39,000</item>
+        <item>$40,000 to $49,000</item>
+        <item>$50,000 to $59,000</item>
+        <item>$60,000 to $69,000</item>
+        <item>$70,000 to $79,000</item>
+        <item>$80,000 to $89,000</item>
+        <item>$90,000 to $99,000</item>
+        <item>$100,000 to $149,000</item>
+        <item>$150,000 or more</item>
+    </string-array>
+    <string-array name="emp_array">
+        <item></item>
+        <item>Employed for wages</item>
+        <item>Self-employed</item>
+        <item>Out of work and looking for work</item>
+        <item>Out of work but not currently looking for work</item>
+        <item>A homemaker</item>
+        <item>A student</item>
+        <item>Retired</item>
+        <item>Unable to work</item>
+    </string-array>
+    <string-array name="storage_size_array">
+        <item>1 day</item>
+        <item>2 days</item>
+        <item>3 days</item>
+        <item>4 days</item>
+        <item>5 days</item>
+        <item>6 days</item>
+        <item>7 days</item>
+        <item>30 days</item>
+    </string-array>
+    <string-array name="interval_array">
+        <item>15 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+    </string-array>
+    <string-array name="map_interval_array">
+        <item>1 hour</item>
+        <item>2 hours</item>
+        <item>3 hours</item>
+        <item>4 hours</item>
+        <item>5 hour</item>
+        <item>6 hours</item>
+        <item>7 hours</item>
+        <item>8 hours</item>
+        <item>9 hour</item>
+        <item>10 hours</item>
+        <item>11 hours</item>
+        <item>12 hours</item>
+        <item>24 hours</item>
+        <item>48 hours</item>
+        <item>1 week</item>
+    </string-array>
+
+</resources>

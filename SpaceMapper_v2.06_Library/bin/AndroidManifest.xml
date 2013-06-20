@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Space Mapper
+ * Copyright (C) 2012, 2013 John R.B. Palmer
+ * Contact: jrpalmer@princeton.edu
+ * 
+ * This file is part of Space Mapper.
+ * 
+ * Space Mapper is free software: you can redistribute it and/or modify 
+ * it under the terms of the GNU General Public License as published by 
+ * the Free Software Foundation, either version 3 of the License, or (at 
+ * your option) any later version.
+ * 
+ * Space Mapper is distributed in the hope that it will be useful, but 
+ * WITHOUT ANY WARRANTY; without even the implied warranty of 
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+ * See the GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License along 
+ * with Space Mapper.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.princeton.jrpalmer.asmlibrary"
+    android:versionCode="12"
+    android:versionName="2.06" >
+
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="9" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity android:name="edu.princeton.jrpalmer.asmlibrary.SplashScreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="edu.princeton.jrpalmer.asmlibrary.Registration" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="edu.princeton.jrpalmer.asmlibrary.Settings" >
+        </activity>
+        <activity android:name="edu.princeton.jrpalmer.asmlibrary.Help" >
+        </activity>
+        <activity android:name="edu.princeton.jrpalmer.asmlibrary.Intro" >
+        </activity>
+        <activity android:name="edu.princeton.jrpalmer.asmlibrary.Consent" >
+        </activity>
+        <activity
+            android:name="edu.princeton.jrpalmer.asmlibrary.MapMyData"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity android:name="edu.princeton.jrpalmer.asmlibrary.ListMyDataCursorLoader" >
+        </activity>
+        <activity
+            android:name="edu.princeton.jrpalmer.asmlibrary.Withdraw"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity android:name="edu.princeton.jrpalmer.asmlibrary.DebriefingSurvey" >
+        </activity>
+        <activity android:name="edu.princeton.jrpalmer.asmlibrary.UnderAgeMessage" >
+        </activity>
+        <activity android:name="edu.princeton.jrpalmer.asmlibrary.WithdrawLock" >
+        </activity>
+        <activity android:name="edu.princeton.jrpalmer.asmlibrary.GPLView" >
+        </activity>
+        <activity android:name="edu.princeton.jrpalmer.asmlibrary.LGPLView" >
+        </activity>
+        <activity android:name="edu.princeton.jrpalmer.asmlibrary.Contact" >
+        </activity>
+        <activity android:name="edu.princeton.jrpalmer.asmlibrary.FAQs" >
+        </activity>
+        <activity android:name="edu.princeton.jrpalmer.asmlibrary.About" >
+        </activity>
+        <activity android:name="edu.princeton.jrpalmer.asmlibrary.ReviewConsent" >
+        </activity>
+        <activity android:name="edu.princeton.jrpalmer.asmlibrary.Lifeline" >
+        </activity>
+
+        <receiver android:name="edu.princeton.jrpalmer.asmlibrary.SpaceMapperBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.LAUNCHER" />
+                <action android:name="edu.princeton.jrpalmer.asmlibrary.SCHEDULE_SERVICE" />
+                <action android:name="edu.princeton.jrpalmer.asmlibrary.UNSCHEDULE_SERVICE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="edu.princeton.jrpalmer.asmlibrary.PowerSensor" >
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.POWER_CONNECTED" />
+                <action android:name="android.intent.action.POWER_DISCONNECTED" />
+                <action android:name="android.intent.action.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="edu.princeton.jrpalmer.asmlibrary.FixGet" />
+        <service android:name="edu.princeton.jrpalmer.asmlibrary.NmeaGet" />
+        <service android:name="edu.princeton.jrpalmer.asmlibrary.FileUploader" />
+        <service android:name="edu.princeton.jrpalmer.asmlibrary.OldFileUploader" />
+
+        <provider
+            android:name="edu.princeton.jrpalmer.asmlibrary.SpaceMapperContentProvider"
+            android:authorities="edu.princeton.jrpalmer.asmlibrary.spacemapperfixprovider"
+            android:enabled="true"
+            android:exported="false" >
+        </provider>
+        <provider
+            android:name="edu.princeton.jrpalmer.asmlibrary.UploadQueueContentProvider"
+            android:authorities="edu.princeton.jrpalmer.asmlibrary.uploadqueueprovider"
+            android:enabled="true"
+            android:exported="false" >
+        </provider>
+    </application>
+
+</manifest>
