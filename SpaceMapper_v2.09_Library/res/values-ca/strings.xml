@@ -1,0 +1,1053 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Space Mapper
+ * Copyright (C) 2012, 2013 John R.B. Palmer
+ * Contact: jrpalmer@princeton.edu
+ * 
+ * This file is part of Space Mapper.
+ * 
+ * Space Mapper is free software: you can redistribute it and/or modify 
+ * it under the terms of the GNU General Public License as published by 
+ * the Free Software Foundation, either version 3 of the License, or (at 
+ * your option) any later version.
+ * 
+ * Space Mapper is distributed in the hope that it will be useful, but 
+ * WITHOUT ANY WARRANTY; without even the implied warranty of 
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+ * See the GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License along 
+ * with Space Mapper.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<resources>
+
+        <string name="visit_website">Web</string>    
+    
+        <string name="no_sharing_msg">En aquests moments no s\'estan guardant dades i les funcions d\'intercanvi de dades s\'han deshabilitat. Si us plau, consulteu el lloc web del projecte per a més informació. Moltes gràcies pel vostre interès!</string>    
+    
+    <string name="end_research_msg">La recol·lecció de dades ha finalitzat de manera que aquesta aplicació ja no comparteix les seves dades amb l\'equip de recerca, però si voleu, podeu continuar utilitzant l\’aplicació.  Si us plau, consulteu el lloc web del projecte per a més informació. Moltes gràcies per la vostra participació en aquest projecte!</string>
+    <string name="on">Encès</string>
+    <string name="off">Apagat</string>
+    <string name="warning_calendar_start_date">Avís: Has escollit una data d\'inici posterior a la data de finalització. Canvia una o l\'altra, per veure les dades al mapa.</string>
+    <string name="warning_calendar_end_date">Avís: Has escollit una data de finalització anterior a la data d\'inici. Canvia una o l\'altra, per veure les dades al mapa.</string>
+    <string name="save_db_label">Enviar</string>
+    <string name="pro_welcome">T\'acabes d\'actualitzar gratuïtament a Space Mapper Pro. Pots deixar de participar en el Activity-Space Project en qualsevol moment canviant la configuració de la teva participació al menú Preferències.\n\nMoltes gràcies!</string>
+    <string name="dbq_battery_prompt">Has tingut problemes amb la durada de la bateria del telèfon mentre s\'utilitza l\'aplicació?</string>
+    <string name="db_howfound_friend">D\'un amic o conegut</string>
+    <string name="db_howfound_ad">D\'un anunci</string>
+    <string name="db_howfound_market">En el Google Play</string>
+    <string name="db_howfound_other">Altre</string>
+    <string name="db_heading">Enquesta</string>
+    <string name="db_subheading">Si tens un moment, agraïrem els teus comentaris!</string>
+    <string name="dbq_howfound_prompt">Com es va assabentar d\'aquesta aplicació? (Pots marcar-ne més d\'una.)</string>
+    <string name="dbq_friends_prompt">Coneixes algú més que faci servir l\'aplicació?</string>
+    <string name="dbq_behavior1_prompt">Creus que aquesta aplicació  pot haver modificat el teu comportament?</string>
+    <string name="dbq_behavior2_prompt">Has pensat en que aquesta aplicació s\'estava executant en el teu dia a dia?</string>
+    <string name="proconversion_notification_initial">Actualització de Space Mapper</string>
+    <string name="proconversion_notification_subject">Actualització de Space Mapper</string>
+    <string name="proconversion_notification">Has rebut una actualització gratuïta a Space Mapper Pro.</string>
+    <string name="offline_warning">T\'ha desconnectat Internet. Si us plau, comprova la teva connexió a Internet i torna-ho a intentar.</string>
+    <string name="uploading">Carrega</string>
+    <string name="location">localització</string>
+    <string name="locations">localitzacions</string>
+    <string name="thank_you_for_participating">Gràcies per participar!</string>
+    <string name="map_settings">Configuració del mapa</string>
+    <string name="start_date_heading">Data d\'inici</string>
+    <string name="start_date">data d\'inici</string>
+    <string name="limit_start_date">Determina la data \nd\'inici del mapa?</string>
+    <string name="end_date_heading">Data final</string>
+    <string name="end_date_text">Determina la data \nfinal del mapa?</string>
+    <string name="end_date">data final</string>
+    <string name="sat">Satèl·lit</string>
+    <string name="use_sat_q">Utilitzar la imatge de satèl·lit?</string>
+    <string name="acc">Precisió</string>
+    <string name="toggleacc_q">Mostra la precisió de les localitzacions?</string>
+    <string name="icons">Icones</string>
+    <string name="display_icons_q">Mostra les icones?</string>
+    <string name="data_settings_label">Configuració de les dades</string>
+    <string name="storage_size_heading">Mida de la base de \ndades de l\'usuari.</string>
+    <string name="volunteer">Vols ser un/a voluntari/a?</string>
+    <string name="share_data_text">Comparteix les dades amb als investigadors?</string>
+    <string name="participation_heading">Participació</string>
+    <string name="participation_time_label">Durada total de la participació:</string>
+    <string name="nlocations_shared_label">Quantitat de localitzacions compartits:</string>
+    <string name="pending_uploads_heading">Càrregues \npendents</string>
+    <string name="files_deleted">arxius esborrats</string>
+    <string name="locations_deleted">localitzacions esborrades</string>
+    <string name="calculating">calculant</string>
+    <string name="available">disponibles</string>
+    <string name="used">utilitzats</string>
+    <string name="present">actualment</string>
+    <string name="withdraw_message_pro">Has deixat de participar a l\'estudi. Pots tornar a participar-hi en qualsevol moment a través del menú de preferències. Gràcies pel teu interès i participació.</string>
+    <string name="filenameprefix_map">meuSpaceMapperMapa</string>
+    <string name="filenameprefix_csv">meveSpaceMapperLocalitzacions</string>
+    <string name="more_info">més informació</string>
+    <string name="currently_sharing">Actualment estàs compartint dades amb l\'Activity-Space Project. Aquesta configuració es pot canviar després d\'haver participat com a mínim una setmana i d`haver compartit almenys 1.000 estimacions de les teves localitzacions.</string>
+    <string name="stats_button">Estadístiques</string>
+    <string name="menu_asp">Activity-Space Project</string>
+    <string name="saving_data">Guardant les dades.</string>
+    <string name="database_updating_text">Actualitzant la base de dades. Si us plau, espera...</string>
+    <string name="mapdata_loading_text">Carregant les dades de localització.</string>
+    <string name="first_station_time_label">"Primera: "</string>
+    <string name="latest_station_time_label">"Última: "</string>
+    <string name="tracking_notification_initial">Gravant la teva activitat-espai.</string>
+    <string name="tracking_notification">Gravant la teva activitat-espai.</string>
+    <string name="tracking_notification_subject">Space Mapper està gravant</string>
+    <string name="menu_flush_gps">Actualitza GPS</string>
+    <string name="renew_gps_alert">Voldries eliminar i baixar un nou A-GPS data ? Fer-ho millorarà el funcionament del GPS si tens una bona connexió de dades i el GPS sembla que no funciona correctament. No obstant, això pot resultar en un endarreriment en les estimacions de les teves localitzacions.</string>
+    <string name="first_fix_time">Primer punt en l\'espai-temps:</string>
+    <string name="last_fix_time">Últim punt en l\'espai-temps:</string>
+    <string name="progress_text">Carregant dades. Si us plau, esperi...</string>
+    <string name="message_store_data">Guardi meves dades està desactivat. Si us plau, aneu al menú de Preferències i encendre\'l si voleu crear una línia de vida.</string>
+    <string name="message_no_data">No tenim encara dades suficients per construir una línia de vida. Recull almenys dues estimacions de localització i torni a intentar-ho.</string>
+    <string name="toggle_zax">Eix temporal</string>
+    <string name="toggle_xyax">Eix espacial</string>
+    <string name="lifeline_button">L\'espai-temps</string>
+    <string name="made_with_SM">Imatge fet amb l\'Space Mapper</string>
+    <string name="menu_share">Comparteix l\'aplicació</string>
+    <string name="share_with">Comparteix via</string>
+    <string name="rate_heading">Avaluar l\'Space Mapper</string>
+    <string name="rate_no">No, gràcies</string>
+    <string name="rate_later">Recorda\'m-ho més tard</string>
+    <string name="rate_yes">Avaluar l\'Space Mapper</string>
+    <string name="rate_prompt">Si t\'agrada utilitzar l\'Space Mapper, si us plau dedica un moment per avaluar-lo. Gràcies pel teu suport!</string>
+    <string name="menu_rate">Avaluar l\'aplicació</string>
+    <string name="menu_map_save">Guardar el Mapa</string>
+    <string name="menu_map_share">Compartir el Mapa</string>
+    <string name="menu_map_settings">Configuració del Mapa</string>
+    <string name="heading_map_interval">Interval</string>
+    <string name="text_map_interval_spinner">Localitzacions al Mapa durant les últimes: </string>
+    <string name="my_location">Localització</string>
+    <string name="data_SD_error">Error al guardar l\’arxiu a la tarja SD.</string>
+    <string name="data_SD_unavailable">Tarja SD No Disponible – l\’arxiu no es pot guardar.</string>
+    <string name="data_saved">Les dades s\’han guardat com </string>
+    <string name="withdraw_error">Tota la informació de l\’Space Mapper ha estat esborrada del teu telèfon però s\’ha produït un error al tractar de posar-se en contacte amb el servidor de l\’Space Mapper. Si us plau, comprova la teva connexió a Internet i torna-ho a intentar.</string>
+    <string name="cancel">Anul.lar</string>
+    <string name="withdraw_warning_yes">Si, vull eliminar les dades ara</string>
+    <string name="withdraw_warning">ATENCIÓ: Tota la informació de l\’Space Mapper s\’ha guardat a la memòria interna del telèfon i totes les dades enviades al servidor de l\’Space Mapper s\’eliminaran. Aquest procés no es pot desfer. Estàs segur/a que vols continuar?</string>
+    <string name="new_fix_blinker">Nova Localització!</string>
+    <string name="time_label">Data i Hora: </string>
+    <string name="lat_label">Latitud: </string>
+    <string name="lon_label">Longitud: </string>
+    <string name="alt_label">Altitud (m): </string>
+    <string name="acc_label">Precisió (m): </string>
+    <string name="prov_label">Proveïdor: </string>
+    <string name="list_my_data_heading">Llista de Dades</string>
+    <string name="list_data_button">Veure Dades</string>
+    <string name="my_data_heading">Les meves dades</string>
+    <string name="GPL">Veure GPL</string>
+    <string name="LGPL">Veure LGPL</string>
+    <string name="menu_center_map">Re-Centrar</string>
+    <string name="menu_toggle_view">Satèl.lit./Mapa</string>
+    <string name="data_off_alert">Guardar les meves dades està apagat. Clica aquí per accedir al menú de Preferències i activar-lo. </string>
+    <string name="noGPSAlert">"El teu GPS està desconnectat. Vols activar-lo?".</string>
+    <string name="noGPSnoNetAlert">El teu GPS i el teu receptor de localitzacions sense fils estan desactivats. Space Mapper no pot obtenir la teva localització sense com a mínim un d\’ells activat. Vols activar-los ?</string>
+    <string name="noGPS">El teu GPS està desactivat. \nSi us plau, clica aquí per activar-lo.</string>
+    <string name="noGPSnoNet">Space Mapper no pot localitzar-te perquè el teu GPS i el teu receptor sense fils estan apagats. \nSi us plau, clica aquí per activar-los.</string>
+    <string name="consent_date_prompt">Apretant el botó d\’Acceptar, has acceptat a l\’hora i la data indicades aquí. Pots canviar d\’opinió respecte la teva participació en el projecte d\’investigació en qualsevol moment utilitzant el menú d\’Activity-Space Project.</string>
+    <string name="delete_mydata_query">Vols esborrar algunes dades que Space Mapper ha guardat al teu telèfon?</string>
+    <string name="more_data_later"> Space Mapper inclourà instruments d\’anàlisi addicionals en el futur proper</string>
+    <string name="help">Ajuda</string>
+    <string name="user_guide">Guia de l\’usuari/a</string>
+    <string name="faqs">FAQs</string>
+    <string name="about">Sobre</string>
+    <string name="review_consent">Formulari de consentiment</string>
+    <string name="contact">Contacte</string>
+    <string name="withdraw_consent">Vull revocar el meu consentiment</string>
+    <string name="contact_heading">Contacte</string>
+    <string name="thanks_for_interest">Gràcies pel teu interès!</string>
+    <string name="ok">OK</string>
+    <string name="underage_message">Per tal de participar al projecte Space Mapper com a voluntari i per tant com a subjecte de recerca cal que siguis major de 18 anys. Pots visitar la nostra pàgina per conèixer-nos més o per posar-te en contacte amb nosaltres per resoldre qualsevol pregunta o fer-nos arribar qualsevol suggerència.</string>
+    <string name="project_website">www.princeton.edu/~jrpalmer/spacemapper</string>
+    <string name="project_email">activity.space.project@gmail.com</string>
+    <string name="menu_locate_now">Localitza\’m ara</string>
+    <string name="menu_upload_now">Carrega Ara</string>
+    <string name="intro_button_over">Sóc major de 18 anys</string>
+    <string name="intro_button_under">Tinc menys de 18 anys.</string>
+    <string name="intro_heading">Benvingut/da a Space Mapper</string>
+    <string name="intro_subheading">Introducció</string>
+    <string name="main_text_off">Space Mapper està desactivat. \nClica aquí per tornar a activar-lo.</string>
+    <string name="location_found">LOCALITZACIÓ TROBADA</string>
+    <string name="checking_location">Localitzant-te</string>
+    <string name="countdown_text">Compte enrere per la nova localització:</string>
+    <string name="main_text">Gràcies per participar! \n\nEn qualsevol moment pots sortir de l\’Space Mapper. No et preocupis, el programa es continuarà executant al teu telèfon. \n\nUtilitza el botó del menú per més opcions.</string>
+    <string name="heading_mydata_spinner">Període</string>
+    <string name="text_mydata_spinner">Per quants dies?</string>
+    <string name="heading_mydata_button">Guardar dades</string>
+    <string name="text_mydata_button">Vols guardar les dades al telèfon?</string>
+    <string name="user_id">ID usuari:</string>
+    <string name="withdraw_lock_heading">Vull deixar de participar</string>
+    <string name="withdraw_lock_subheading"></string>
+    <string name="withdraw_lock_text">Has deixat de participar en l\’estudi i has eliminat totes les dades de l\’Space Mapper del teu telèfon i del servidor. Per la teva informació, aquest codi és l\’ID d\’usuari únic que el programa t\’ha assignat durant la teva participació. Si vols tornar a participar a l\’estudi en el futur, necessitaràs reinstal.lar l\’aplicació al teu telèfon i el programa t\’assignarà automàticament un nou ID d\’usuari. </string>
+    <string name="withdraw_delete_button">Vull deixar de participar i eliminar totes les dades</string>
+    <string name="withdraw_delete_text">Clica aquí per deixar de participar a l\’estudi i eliminar permanentment totes les dades de l\’Space Mapper del teu telèfon i del servidor del projecte d\’investigació. Necessitaràs una connexió d\’internet per tal de completar aquest procés.</string>
+    <string name="withdraw_heading">Vull deixar de participar</string>
+    <string name="withdraw_subheading"></string>
+    <string name="save_data_button">Guarda les dades</string>
+    <string name="map_data_button">Representa les dades en un Mapa</string>
+    <string name="save_data_prompt">Guardar a la tarja SD com un arxiu de valor. “.csv”.</string>
+    <string name="map_data_prompt">Veure les meves dades a un mapa.</string>
+    <string name="RegistrationHeading">Registrar-se</string>
+    <string name="RegistrationSubHeading">Si us plau, completa aquesta enquesta</string>
+    <string name="yes">si</string>
+    <string name="no">no</string>
+    <string name="male">home</string>
+    <string name="female">dona</string>
+    <string name="married_prompt">Estàs casat/da?</string>
+    <string name="kids_prompt">Quants fills/es viuen amb tu?</string>
+    <string name="race_prompt">Raça/Ètnia</string>
+    <string name="race_subprompt">Si us plau, marca una de les caselles o més que segons t\’identifiquis en un grup o en més d\’un. (Les categories de la llista són les utilitzades al Cens dels Estats Units.)</string>
+    <string name="race_white">Blanca</string>
+    <string name="race_black">Negra o Africana-americana</string>
+    <string name="race_latino">Hispana/Llatina/Espanyola</string>
+    <string name="race_native_american">Indi Americà o nativa d\’Alaska</string>
+    <string name="race_asian">Asiàtica</string>
+    <string name="race_other">Alguna altra ètnia</string>
+    <string name="specify">Si us plau, contesta:</string>
+    <string name="pob_prompt">A quin país vas néixer?</string>
+    <string name="por_prompt">A quin país resideixes actualment?</string>
+    <string name="entryyear_prompt">Quan et vas traslladar al teu país de residència?</string>
+    <string name="entryyear_prompt_short">Any al qual et vas traslladar al teu país de residència:</string>
+    <string name="cit_prompt">Ets un/a ciutadà/ana del país al qual resideixes?</string>
+    <string name="heading_language">Idioma</string>
+    <string name="text_language_spinner">Canvia l\’idioma de l\’app.</string>
+    <string name="heading_interval">Fixi l\’Interval</string>
+    <string name="on_off">On/Off</string>
+    <string name="menu_settings">Preferències</string>
+    <string name="menu_data">Les meves dades</string>
+    <string name="menu_help">Ajuda</string>
+    <string name="SplashHeading">Space Mapper</string>
+    <string name="SexPrompt">Sexe:</string>
+    <string name="born_res_prompt">Vas néixer al mateix país al qual resideixes actualment?</string>
+    <string name="age_prompt">Edat:</string>
+    <string name="AgeHint">Entra la teva edat</string>
+    <string name="lang_prompt">Quina llengua parles principalment a casa?</string>
+    <string name="ed_prompt">Nivell d\’estudis completat:</string>
+    <string name="inc_prompt">Quina va ser la renda familiar durant els últims 12 mesos?</string>
+    <string name="inc_prompt_short">Renda familiar durant els últims 12 mesos:</string>
+    <string name="nhousehold_prompt">Quants membres familiars conviuen a la teva llar, comptant-te tu també?</string>
+    <string name="nhousehold_prompt_short">Membres de la llar, incloent-t´hi tu:</string>
+    <string name="emp_prompt">Situació laboral:</string>
+    <string name="save_reg_label">Envia respostes</string>
+    <string name="service_is_on">Space Mapper està activat</string>
+    <string name="service_is_off">Space Mapper està desactivat</string>
+    <string name="text_interval_spinner">Mesura la localització cada: </string>
+    <string name="banner_image_content_description">Icona Space Mapper</string>
+    <string name="consent_heading">Formulari de Consentiment</string>
+    <string name="consent_instructions">Si us plau llegeix el següent formulari de consentiment. Pots acceptar electrònicament clicant el botó d\’acceptar de la pantalla. Si tens qualsevol pregunta, envia-les a activity.space.project@gmail.com.</string>
+    <string name="consent_signature_button">Acceptar</string>
+    <string name="nfixes_text">Guardats:</string>
+    <string name="nuploads_text">Enviats:</string>
+    <string name="thankyou">Gràcies per la teva participació!</string>
+    <string name="consent_decline_button">No accepto</string>
+    <string name="intro_text">
+<![CDATA[
+<p>Gràcies per install.lar l\’app ! Space Mapper és part d\’un estudi acadèmic sobre el moviment de les persones i els espais als quals desarrollen les seves activitats diàries. Si participes en aquest estudi com a voluntari/ària, Space Mapper guardarà al teu telèfon les teves localitzaciones a intervals de temps predeterminats i els enviarà a investigadors de la Universitat de Princeton. Abans d\’iniciar la teva participació a l\’estudi i de començar a utilitzar l\’aplicació et preguem que contestis una breu enquesta inicial per l\’estudi demogràfic dels participants i que contestis una altra breu enquesta al finalitzar la teva participació.</p>
+<p>Tota la informació que ens proporcionis està encriptada i serà guardada de manera confidencial. Les úniques persones que hi tindran accés són els investigadors d\’Space Mapper, i només els resultats absolutament anònims es compartiran amb d\’altres investigadors. Pots deixar de participar en el projecte de recerca en qualsevol moment i sol.licitar l\’eliminació de les teves dades del servidor.</p>
+<p>Si participes en aquest estudi contribuiràs a la ciència i ajudaràs a millorar a conèixer el moviment humà i la segregació espacial de les persones. Podràs dibuixar a un mapa els teus moviments, analitzar-los i conèixer millor els espais que freqüentes.</p>
+<p>Per tal de participar en aquest projecte has de ser major de 18 anys.</p>
+<p>Si tens alguna pregunta, si us plau, visita la nostra pàgina web o envia\’ns un email a l\’adreça que tens aquí sota</p>
+<p>Si vols continuar, si us plau llegeix i accepta electrònicament el formulari de consentiment de la pàgina següent. Moltes gràcies pel teu interès i participació!</p>
+<p>Copyright &#169; 2012, 2013 John R.B. Palmer</p>
+ 
+<p> This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License
+    along with this program.  If not, see http://www.gnu.org/licenses.</p>
+
+<p>This program incorporates code from the Human Mobility Project, written by Chang Y. Chung, 
+Kathleen Li, and Necati E. Ozgencil, which is subject to the following terms:</p>
+
+<blockquote><p>Copyright &#169; 2010, 2011 Human Mobility Project</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p></blockquote>
+
+<p>This program also incorporates code from Funf, which is subject to the following terms:</p>
+
+
+<blockquote> <p> 		Funf: Open Sensing Framework<br/>
+ 		Copyright &#169; 2010-2011 Nadav Aharony, Wei Pan, Alex Pentland.<br/> 
+  		Acknowledgments: Alan Gardner<br/>
+  		Contact: nadav@media.mit.edu</p>
+  
+<p>  		Funf is free software: you can redistribute it and/or modify
+  		it under the terms of the GNU Lesser General Public License as 
+  		published by the Free Software Foundation, either version 3 of 
+  		the License, or (at your option) any later version. </p>
+  
+<p> 		Funf is distributed in the hope that it will be useful, but 
+  		WITHOUT ANY WARRANTY; without even the implied warranty of 
+  		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+  		See the GNU Lesser General Public License for more details.</p></blockquote>
+
+<p>This program also incorporates code from range-seek-bar, written by Stephan Tittel, Peter Sinnott, and Thomas Barrasso, which is subject to the following terms:</p>
+
+
+<blockquote><p>Copyright 2013 Stephan Tittel, Peter Sinnott, and Thomas Barrasso</p>
+ <p>Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at</p>
+<p>       http://www.apache.org/licenses/LICENSE-2.0</p>
+<p>   Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.</p></blockquote>
+
+]]>
+    </string>
+    <string name="about_html">
+<![CDATA[
+<p>Space Mapper versió 2.09</p>
+
+<p>Space Mapper forma part d\’un projecte acadèmic sobre l\’espai i els llocs als quals es troben les persones al 
+desenvolupar les seves activitats durant la seva vida diària. Escrit per John R.B. Palmer, està parcialment basat en el codi del Human Mobility Project, escrit per Chang Y. Chung, Kathleen Li, i Necati E. Ozgencil, en el de Funf, escrit per Nadav Aharony, Wei Pan, i Alex Pentland, i en el de range-seek-bar, escrit per Stephan Tittel, Peter Sinnott, i Thomas Barrasso. El codi de l\’Space Mapper està disponible a la pàgina web que teniu a continuació.</p>
+<p>Copyright &#169; 2012, 2013 John R.B. Palmer</p>
+ 
+<p> This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License
+    along with this program.  If not, see http://www.gnu.org/licenses.</p>
+
+<p>The code incorporated from the Human Mobility Project is subject to the following terms:</p>
+
+<blockquote><p>Copyright &#169; 2010, 2011 Human Mobility Project</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p></blockquote>
+
+<p>The code incorporated from Funf is subject to the following terms:</p>
+
+
+<blockquote> <p> 		Funf: Open Sensing Framework<br/>
+ 		Copyright &#169; 2010-2011 Nadav Aharony, Wei Pan, Alex Pentland.<br/> 
+  		Acknowledgments: Alan Gardner<br/>
+  		Contact: nadav@media.mit.edu</p>
+  
+<p>  		Funf is free software: you can redistribute it and/or modify
+  		it under the terms of the GNU Lesser General Public License as 
+  		published by the Free Software Foundation, either version 3 of 
+  		the License, or (at your option) any later version. </p>
+  
+<p> 		Funf is distributed in the hope that it will be useful, but 
+  		WITHOUT ANY WARRANTY; without even the implied warranty of 
+  		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+  		See the GNU Lesser General Public License for more details.</p></blockquote>
+
+<p>The code incorporated from range-seek-bar is subject to the following terms:</p>
+
+<blockquote> <p>
+  Copyright 2013 Stephan Tittel, Peter Sinnott, and Thomas Barrasso</p>
+
+   <p>Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at</p>
+
+<p>       http://www.apache.org/licenses/LICENSE-2.0</p>
+
+<p>   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.</p></blockquote>  
+
+    ]]>
+    </string>
+    <string name="faqs_html">
+<![CDATA[
+<p><b>Com participo en aquest projecte de recerca? </b></p>
+
+Instal.la l\’aplicació al teu telèfon, obre-la, accepta les condicions i registra\’t. Una vegada completada aquesta fase inicial assegura\’t que el GPS del teu telèfon i/o el receptor de localitzacions sense fil del teu telèfon estan actius i continua amb les activitats habituals. L\’aplicació continuarà executant-se al telèfon i enviarà la informació sobre les teves localitzacions al servidor del projecte d\’investigació a intervals de temps regulars. 
+
+<p><b>Rebré algun tipus de compensació econòmica per la meva participació?</b></p>
+ 
+No, però podràs guardar les teves localitzacions i situar-les al mapa i sobretot, estaràs contribuint a l\’avenç de la ciència.
+
+<p><b>Puc deixar de participar en l\’estudi i desintal.lar l\’aplicació si aquesta no m\’agrada?</b></p>
+ 
+Si. La teva participació és totalment voluntària i pot acabar quan ho decideixis. Per tal de deixar de participar simplement desactiva l\’aplicació des del menú de Preferències de l\’aplicació o desintal.la-la utilitzant la configuració del teu telèfon. Si vols eliminar totes les teves dades del servidor del projecte d\’investigació, utilitza el botó desactivar del menú d\’Activity-Space Project de l\’aplicació.
+
+<p><b>Quina informació compartiré i com es protegirà la meva identitat?</b></p>
+
+L\’aplicació envia la informació següent al servidor del projecte d\’investigació: (1) el dia i hora del teu consentiment, (2) les teves respostes a les preguntes de l\’enquesta inicial, (3) la configuració d\’idioma al teu telèfon, (4) qualsevol resposta a l\’enquesta de seguiment, i (5) les localitzacions que ens envïis que consistiran en la latitud, longitud, altitud, precisió, receptor de localització 
+(i.e. GPS o xarxa sense fils), estat de la bateria i temps. Aquesta és la única informació que es recopila, està encriptada al teu telèfon abans d\’enviar-la al servidor i es desencripta i analitza per l\’equip del projecte d\’investigació només quan aquesta s\’ha eliminat del servidor. La teva informació serà utilitzada només per analitzar i contestar les preguntes de mobilitat i segregació de la població i no es compartiran amb ningú que no formi part de l\’equip d\’investigació excepte quan aquestes dades hagin estat agregades i/o transformades de forma que sigui impossible que se t\’identifiqui. 
+
+<p><b>Hi ha restriccions respecte qui pot participar al projecte?</p></b> 
+
+Si – cal que siguis major de 18 anys per tal de poder participar. A més, per tal que l\’aplicació funcioni és necessari que tinguis un dispositiu que funcioni amb tecnologia Android. 
+
+<p><b>És perillós utilitzar el meu telèfon mentre condueixo?</b></p>
+ 
+Si – si us plau, no ho facis ! La utilització dels telèfons mòbils mentre es condueix pot augmentar el risc d\’accidents, mort o qualsevol altre dany a més d\’estar prohibit en molts estats. Per tant, et demanem por favor que no utilitzis el teu telèfon mòbil mentre condueixis. 
+
+<p><b>Per què recolliu informació sobre la bateria del meu telèfon?</b></p>
+
+Per tal que ens ajudi a millorar l\’aplicació. Hem dissenyat l\’aplicació de manera que sigui el menys intrusiva possible amb el funcionament del telèfon de forma que si ens adonessim que l\’aplicació està utilitzant una gran càrrega de la bateria del teu telèfon, ho arreglaríem en properes versions de l\’aplicació.
+
+<p><b>Com puc utilitzar la informació de la meva localització?</b></p>
+
+Des del menú de Preferències de l\’aplicació vés a Guarda les meves dades i clica \"si\" i escull la quantitat d\’informació que vols guardar en base al Període durant el qual vols guardar les teves dades. Les teves localitzacions es guardaran al teu telèfon durant el període que escullis i podràs situar-les a un mapa i guardar-les a la teva tarja SD des del menú de Les Meves Dades. Cal destacar que la informació que decideixis guardar al teu telèfon pel teu ús personal no està encriptada. 
+
+<p><b>Quan situo les meves dades al mapa, algunes localitzacions no es veuen bé. Per què passa això?</b></p>
+
+La precisió de les estimacions de les localitzacions depèn d\’un nombre de factors, entre els quals es troba l\’accés als senyals del satèl.lit de GPS i la connexió a les xarxes sense fils. L\’aplicació està dissenyada per avaluar la precisió de les localitzacions segons la càrrega de bateria del telèfon de manera que en alguns casos, les estimacions tindran un major marge d\’error. 
+
+<p><b>Per què l\’aplicació no guarda les meves localitzacions?</b></p>
+
+Aquest fet es pot produir-se en casos als quals ni el teu GPS ni el teu receptor de localització sense fils estiguin activats o quan el teu telèfon no pugui detectar la teva localització a un cert lloc amb la mínima precisió requerida per l\’aplicació. 
+
+<p><b>Per què l\’aplicació no envia les meves localitzacions al servidor?</b></p>
+
+Aquest fet pot ser causat perquè el telèfon no estigui connectat a Internet. Quan estiguis segur/a que el teu telèfon està connectat a Internet, clica \"Envia ara\" del menú principal.
+
+<p><b>A qui hauria de contactar si tinc més preguntes?</b></p>
+ 
+John Palmer, estudiant de doctorat de la Woodrow Wilson School i l\’Office of Population Research de la Universitat de Princeton, és l\’investigador principal d\’aquest projecte. Per qualsevol pregunta relativa a aquest projecte, posa\’t en contacte amb mi a l\’adreça de correu que tens aquí. 
+
+    ]]>
+    </string>
+    <string name="consent_text">
+<![CDATA[
+<p><b>FORMULARI ESTÀNDARD DE CONSENTIMENT PRESTAT PER UN ADULT</b></p>
+<p>PRINCETON UNIVERSITY INSTITUTIONAL REVIEW BOARD</p>
+<p>TÍTOL DEL PROJECTE D\’INVESTIGACIÓ: Activity-Space Project</p>
+<p>INVESTIGADOR: John Palmer</p>
+<p>La Universitat de Princeton requereix el present consentiment informat a qualsevol participant en un projecte d\’investigació liderat per investigadors de la Universitat. Aquest projecte ha estat aprovat per l\’ Institutional Review Board for Human Subjects de la Universitat de Princeton.</p>
+<p>Se m\’ha:</p>
+<p>A. Proporcionat una explicació detallada sobre els procediments que se seguiran durant el projecte, incloent aquells que són experimentals.</p>
+<p><b><i>Entenc que per participar en aquest projecte haig de ser major de 18 anys. Entenc que una aplicació continuarà executant-se al meu telèfon i que aquesta aplicació enviarà informació sobre les meves localitzacions geogràfiques i el meu moviment, sobre la configuració de l\’idioma del meu mòbil i l\’estat de la bateria del meu telèfon així com sobre les meves respostes a les preguntes de les enquestes dels investigadors de la Universitat de Princeton.</p>
+<p>Entenc que la utilitació del telèfon mòbil mentre condueixi pot augmentar el risc d\’accidents, morts o danys i que està prohibit en molts estats. Entenc que no hauria d\’utilitzar l\’aplicació o el meu telèfon mòbil en cap cas mentre condueixi, i estic d\’acord en no fer-ho. Entenc també que la seguretat és la prioritat més important en tots els aspectes d\’aquest projecte i estic d\’acord en utilitzar el meu telèfon mòbil en tot moment d\’una manera segura.</p>
+
+
+<p>Entenc que l\’objectiu d\’aquest projecte d\’investigació és estudiar el moviment humà i la segregació espacial; i que no rebré cap tipus de compensació econòmica per la meva participació; podré revisar i utilitzar la meva informació, incloent les estimacions de les localitzacions i els mapes dels meus patrons de moviment. Entenc que es prendran les mesures raonables per tal de protegir el meu anonimat en tota la informació que envïi pel projecte d\’investigació i que aquesta no es compartirà amb persones alienes al projecte. Aquesta informació s\’utilitzarà només per finalitats científiques. Finalment, entenc que l\’equip del projecte d\’investigació eliminarà tota la informació que hagi transmès si així ho solicités a través del botó "Deixar de participar en el projecte" del menú d\’ajuda de l\’aplicació.</b></i></p>
+<p>B. Contestat les preguntes que tenia relatives a l\’estudi.</p>
+<p>Entenc que:</p>
+<p>A. La meva participació és voluntària, i puc revocar el meu consentiment i deixar de participar en el projecte d\’investigació en qualsevol moment. La meva negativa a participar en el projecte d\’investigació no donarà lloc a cap tipus de penalització.</p>
+<p>B. La prestació del meu consentiment no implica la renúncia a qualsevol dret o eximeix a la Universitat de Princeton, els seus agents o a l\’investigador responsable d\’aquest projecte, de qualsevol responsabilitat per culpa.</p>
+<p>Presto el meu consentiment a ser un participant d\’aquest projecte d\’investigació.</p>
+        ]]>
+    </string>
+    <string name="contact_info">
+<![CDATA[
+<p><b>TÍTOL DEL PROJECTE D\’INVESTIGACIÓ: Activity-Space Project</b></p>
+<p><b>Per qualsevol pregunta relativa a aquest projecte d\’investigació contacta amb:</b></p>
+<p>INVESTIGADOR PRINCIPAL:</p>
+John Palmer<br/>
+Office of Population Research<br/>
+Wallace Hall<br/>
+Princeton University<br/>
+Princeton, NJ 08644
+
+<p><b>Per qualsevol pregunta sobre els seus drets com a participant d\’aquest projecte d\’investigació contacta:</b></p>
+Princeton University Office of Research Integrity and Assurance<br/> 
+Compliance Administrator<br/>
+Email: irb@princeton.edu<br/> 
+Phone: (609) 258-3077 
+
+     ]]>
+    </string>
+
+    <string-array name="ed_array">
+        <item></item>
+        <item>Sense estudis primaris </item>
+        <item>Escola primària</item>
+        <item>Escola secundària</item>
+        <item>Un curs univesitari o més</item>
+        <item>Associate degree (e.g., AA, AS)</item>
+        <item>Graduat/da universitari/a</item>
+        <item>Estudis post-graduats de Màster</item>
+        <item>Titulacions Professionals (i.e. metge, dentista, advocat/da)</item>
+        <item>Doctorat</item>
+    </string-array>
+    <string-array name="incs_array">
+        <item></item>
+        <item>Menys de $10,000</item>
+        <item>Entre $10,000 i $19,000</item>
+        <item>Entre $20,000 i $29,000</item>
+        <item>Entre $30,000 i $39,000</item>
+        <item>Entre $40,000 i $49,000</item>
+        <item>Entre $50,000 i $59,000</item>
+        <item>Entre $60,000 i $69,000</item>
+        <item>Entre $70,000 i $79,000</item>
+        <item>Entre $80,000 i $89,000</item>
+        <item>Entre $90,000 i $99,000</item>
+        <item>Entre $100,000 i $149,000</item>
+        <item>$150,000 o més</item>
+    </string-array>
+    <string-array name="emp_array">
+        <item></item>
+        <item>Treballador/a per compte aliena</item>
+        <item>Treballador/a per compte promi</item>
+        <item>Aturat/da buscant feina</item>
+        <item>Aturat/da però sense buscar feina actualment</item>
+        <item>Mestressa de casa</item>
+        <item>Estudiant</item>
+        <item>Jubilat/da</item>
+        <item>No puc treballar</item>
+    </string-array>
+    <string-array name="storage_size_array">
+        <item>1 dia</item>
+        <item>2 dies</item>
+        <item>3 dies</item>
+        <item>4 dies</item>
+        <item>5 dies</item>
+        <item>6 dies</item>
+        <item>7 dies</item>
+        <item>30 dies</item>
+    </string-array>
+    <string-array name="interval_array">
+        <item>15 segons</item>
+        <item>30 segons</item>
+        <item>1 minut</item>
+        <item>2 minuts</item>
+        <item>5 minuts</item>
+        <item>10 minuts</item>
+        <item>30 minuts</item>
+        <item>1 hora</item>
+    </string-array>
+    <string-array name="map_interval_array">
+        <item>1 hora</item>
+        <item>2 hores</item>
+        <item>3 hores</item>
+        <item>4 hores</item>
+        <item>5 hores</item>
+        <item>6 hores</item>
+        <item>7 hores</item>
+        <item>8 hores</item>
+        <item>9 hores</item>
+        <item>10 hores</item>
+        <item>11 hores</item>
+        <item>12 hores</item>
+        <item>24 hores</item>
+        <item>48 hores</item>
+        <item>1 setmana</item>
+    </string-array>
+    <string-array name="countries_array">
+        <item></item>
+        <item>Estats Units (EUA)</item>
+        <item>Espanya</item>
+        <item>Afganistan</item>
+        <item>Åland, illes</item>
+        <item>Albània</item>
+        <item>Alemanya</item>
+        <item>Algèria</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Anguilla</item>
+        <item>Antàrtida</item>
+        <item>Antigua i Barbuda</item>
+        <item>Antilles Neerlandeses</item>
+        <item>Aràbia Saudita</item>
+        <item>Argentina</item>
+        <item>Armènia</item>
+        <item>Aruba</item>
+        <item>Austràlia</item>
+        <item>Àustria</item>
+        <item>Azerbaidjan</item>
+        <item>Bahames</item>
+        <item>Bahrain</item>
+        <item>Bangla Desh</item>
+        <item>Barbados</item>
+        <item>Bèlgica</item>
+        <item>Belize</item>
+        <item>Benín</item>
+        <item>Bermudes</item>
+        <item>Bhutan</item>
+        <item>Bielorússia</item>
+        <item>Bolívia</item>
+        <item>Bòsnia i Hercegovina</item>
+        <item>Botswana</item>
+        <item>Bouvet</item>
+        <item>Brasil</item>
+        <item>Brunei</item>
+        <item>Bulgària</item>
+        <item>Burkina Faso</item>
+        <item>Burundi</item>
+        <item>Caiman, illes</item>
+        <item>Cambodja</item>
+        <item>Camerun</item>
+        <item>Canadà</item>
+        <item>Cap Verd</item>
+        <item>Centreafricana, República</item>
+        <item>Christmas, illa</item>
+        <item>Cocos, illes</item>
+        <item>Colòmbia</item>
+        <item>Comores</item>
+        <item>Congo, República del</item>
+        <item>Congo, República Democràtica del</item>
+        <item>Cook, illes</item>
+        <item>Corea del Nord</item>
+        <item>Corea del Sud</item>
+        <item>Costa d\'Ivori</item>
+        <item>Costa Rica</item>
+        <item>Croàcia</item>
+        <item>Cuba</item>
+        <item>Dinamarca</item>
+        <item>Djibouti</item>
+        <item>Dominica</item>
+        <item>Dominicana, República</item>
+        <item>Egipte</item>
+        <item>Equador</item>
+        <item>Emirats Àrabs Units</item>
+        <item>Eritrea</item>
+        <item>Eslovàquia</item>
+        <item>Eslovènia</item>
+        <item>Espanya</item>
+        <item>Estats Units (EUA)</item>
+        <item>Estònia</item>
+        <item>Etiòpia</item>
+        <item>Fèroe, illes</item>
+        <item>Fiji</item>
+        <item>Filipines</item>
+        <item>Finlàndia</item>
+        <item>França</item>
+        <item>Gabon</item>
+        <item>Gàmbia</item>
+        <item>Geòrgia</item>
+        <item>Geòrgia del Sud i Sandwich del Sud, illes</item>
+        <item>Ghana</item>
+        <item>Gibraltar</item>
+        <item>Grècia</item>
+        <item>Grenada</item>
+        <item>Grenlàndia</item>
+        <item>Guadeloupe</item>
+        <item>Guaiana Francesa</item>
+        <item>Guam</item>
+        <item>Guatemala</item>
+        <item>República de Guinea</item>
+        <item>Guinea Bissau</item>
+        <item>Guinea Equatorial</item>
+        <item>Guyana</item>
+        <item>Haití</item>
+        <item>Heard, illa i McDonald, illes</item>
+        <item>Hondures</item>
+        <item>Hong Kong</item>
+        <item>Hongria</item>
+        <item>Iemen</item>
+        <item>Illes Perifèriques Menors dels EUA</item>
+        <item>Índia</item>
+        <item>Indonèsia</item>
+        <item>Iran</item>
+        <item>Iraq</item>
+        <item>Irlanda</item>
+        <item>Islàndia</item>
+        <item>Israel</item>
+        <item>Itàlia</item>
+        <item>Jamaica</item>
+        <item>Japó</item>
+        <item>Jordània</item>
+        <item>Kazakhstan</item>
+        <item>Kenya</item>
+        <item>Kirguizistan</item>
+        <item>Kiribati</item>
+        <item>Kuwait</item>
+        <item>Laos</item>
+        <item>Lesotho</item>
+        <item>Letònia</item>
+        <item>Líban</item>
+        <item>Libèria</item>
+        <item>Líbia</item>
+        <item>Liechtenstein</item>
+        <item>Lituània</item>
+        <item>Luxemburg</item>
+        <item>Macau</item>
+        <item>Macedònia</item>
+        <item>Madagascar</item>
+        <item>Malàisia</item>
+        <item>Malawi</item>
+        <item>Maldives</item>
+        <item>Mali</item>
+        <item>Malta</item>
+        <item>Malvines, illes</item>
+        <item>Mariannes Septentrionals, illes</item>
+        <item>Marroc</item>
+        <item>Marshall, illes</item>
+        <item>Martinica</item>
+        <item>Maurici</item>
+        <item>Mauritània</item>
+        <item>Mayotte</item>
+        <item>Mèxic</item>
+        <item>Micronèsia, Estats Federats de</item>
+        <item>Moçambic</item>
+        <item>Moldàvia</item>
+        <item>Mònaco</item>
+        <item>Mongòlia</item>
+        <item>Montenegro</item>
+        <item>Montserrat</item>
+        <item>Myanmar</item>
+        <item>Namíbia</item>
+        <item>Nauru</item>
+        <item>Nepal</item>
+        <item>Nicaragua</item>
+        <item>Níger</item>
+        <item>Nigèria</item>
+        <item>Niue</item>
+        <item>Norfolk, illa</item>
+        <item>Noruega</item>
+        <item>Nova Caledònia</item>
+        <item>Nova Zelanda</item>
+        <item>Oman</item>
+        <item>Països Baixos</item>
+        <item>Pakistan</item>
+        <item>Palau</item>
+        <item>Palestina</item>
+        <item>Panamà</item>
+        <item>Papua Nova Guinea</item>
+        <item>Paraguai</item>
+        <item>Perú</item>
+        <item>Pitcairn, illes</item>
+        <item>Polinèsia Francesa</item>
+        <item>Polònia</item>
+        <item>Portugal</item>
+        <item>Puerto Rico</item>
+        <item>Qatar</item>
+        <item>Regne Unit</item>
+        <item>Reunió, illa de la</item>
+        <item>Romania</item>
+        <item>Rússia</item>
+        <item>Rwanda</item>
+        <item>Sàhara Occidental</item>
+        <item>Saint Kitts i Nevis</item>
+        <item>Saint Lucia</item>
+        <item>Saint-Pierre i Miquelon</item>
+        <item>Saint Vincent i les Grenadines</item>
+        <item>Salomó</item>
+        <item>Salvador, El</item>
+        <item>Samoa</item>
+        <item>Samoa Nord-americana</item>
+        <item>San Marino</item>
+        <item>Santa Helena</item>
+        <item>São Tomé i Príncipe</item>
+        <item>Senegal</item>
+        <item>Sèrbia</item>
+        <item>Seychelles</item>
+        <item>Sierra Leone</item>
+        <item>Singapur</item>
+        <item>Síria</item>
+        <item>Somàlia</item>
+        <item>Sri Lanka</item>
+        <item>Sud-àfrica</item>
+        <item>Sudan</item>
+        <item>Suècia</item>
+        <item>Suïssa</item>
+        <item>Surinam</item>
+        <item>Svalbard i Jan Mayen</item>
+        <item>Swazilàndia</item>
+        <item>Tadjikistan</item>
+        <item>Tailàndia</item>
+        <item>Taiwan</item>
+        <item>Tanzània</item>
+        <item>Territori Britànic de l\'Oceà Índic</item>
+        <item>Territoris Francesos del Sud</item>
+        <item>Timor Oriental</item>
+        <item>Togo</item>
+        <item>Tokelau</item>
+        <item>Tonga</item>
+        <item>Trinitat i Tobago</item>
+        <item>Tunísia</item>
+        <item>Turkmenistan</item>
+        <item>Turks i Caicos, illes</item>
+        <item>Turquia</item>
+        <item>Tuvalu</item>
+        <item>Txad</item>
+        <item>Txeca, República</item>
+        <item>Ucraïna</item>
+        <item>Uganda</item>
+        <item>Uruguai</item>
+        <item>Uzbekistan</item>
+        <item>Vanuatu</item>
+        <item>Vaticà, Ciutat del</item>
+        <item>Veneçuela</item>
+        <item>Verges Britàniques, illes</item>
+        <item>Verges Nord-americanes, illes</item>
+        <item>Vietnam</item>
+        <item>Wallis i Futuna</item>
+        <item>Xile</item>
+        <item>Xina</item>
+        <item>Xipre</item>
+        <item>Zàmbia</item>
+        <item>Zimbabwe</item>
+    </string-array>
+    <string-array name="langs_array">
+        <item></item>
+        <item>Català (ca)</item>
+        <item>Español (es)</item>
+        <item>Euskara (eu)</item>
+        <item>Galego (gl)</item>
+        <item>Asturianu (ast)</item>
+        <item>Aragonés (an)</item>
+        <item>English (en)</item>
+        <item>Afrikaans (af)</item>
+        <item>Alemannisch (als)</item>
+        <item>Aragonés (an)</item>
+        <item>Armâneashti (roa-rup)</item>
+        <item>Asturianu (ast)</item>
+        <item>Avañe\'ẽ (gn)</item>
+        <item>Aymar (ay)</item>
+        <item>Azerbaycan dili (az)</item>
+        <item>Bahasa Indonesia (id)</item>
+        <item>Bahasa Melayu (ms)</item>
+        <item>Bahsa Acèh (ace)</item>
+        <item>Bamanankan (bm)</item>
+        <item>Bân-lâm-gú (zh-min-nan)</item>
+        <item>Basa Banyumasan (map-bms)</item>
+        <item>Basa Jawa (jv)</item>
+        <item>Basa Sunda (su)</item>
+        <item>Basa Ugi (bug)</item>
+        <item>Bikol (bi)</item>
+        <item>Bislama (bi)</item>
+        <item>Boarisch (bar)</item>
+        <item>Bosanski (bs)</item>
+        <item>Brezhoneg (br)</item>
+        <item>Català (ca)</item>
+        <item>Chavacano (cbk-zam)</item>
+        <item>Chamorru (ch)</item>
+        <item>Čeština (cs)</item>
+        <item>chiChewa (ny)</item>
+        <item>chiShona (sn)</item>
+        <item>chiTumbuka (tum)</item>
+        <item>chiVenda (ve)</item>
+        <item>Corsu (co)</item>
+        <item>Cuengh (za)</item>
+        <item>Cymraeg (cy)</item>
+        <item>Dansk (da)</item>
+        <item>Deitsch (pdc)</item>
+        <item>Deutsch (de)</item>
+        <item>Diné bizaad (nv)</item>
+        <item>dorerin Naoero (na)</item>
+        <item>Dzhudezmo (lad)</item>
+        <item>Eesti (et)</item>
+        <item>English (en)</item>
+        <item>Español (es)</item>
+        <item>Esperanto (eo)</item>
+        <item>Estremeñu (ext)</item>
+        <item>Euskara (eu)</item>
+        <item>Faka Tonga (to)</item>
+        <item>Føroyskt (fo)</item>
+        <item>Français (fr)</item>
+        <item>Franco-provençal (frp)</item>
+        <item>Frysk (fy)</item>
+        <item>Fulfulde (ff)</item>
+        <item>Furlan (fur)</item>
+        <item>Gaeilge (ga)</item>
+        <item>Gaelg (gv)</item>
+        <item>Gagana Samoa (sm)</item>
+        <item>Gàidhlig (gd)</item>
+        <item>Galego (gl)</item>
+        <item>Gutisk (got)</item>
+        <item>Hak-kâ-fa / 客家話 (hak)</item>
+        <item>Hawaiian (haw)</item>
+        <item>Hornjoserbšćina (hsb)</item>
+        <item>Hrvatski (hr)</item>
+        <item>Ido (io)</item>
+        <item>Igbo (ig)</item>
+        <item>Ilokano (ilo)</item>
+        <item>Interlingua (ia)</item>
+        <item>Interlingue (ie)</item>
+        <item>Iñupiak (ik)</item>
+        <item>isiXhosa (xh)</item>
+        <item>isiZulu (zu)</item>
+        <item>Íslenska (is)</item>
+        <item>Italiano (it)</item>
+        <item>Kajin Majel (mh)</item>
+        <item>Kalaallisut (kl)</item>
+        <item>Kapampangan (pam)</item>
+        <item>Kaszëbsczi (csb)</item>
+        <item>Kernewek / Karnuack (kw)</item>
+        <item>Kikongo (kg)</item>
+        <item>Kikuyu (ki)</item>
+        <item>Kinyarwandi (rw)</item>
+        <item>Kırgızca / Кыргызча (ky)</item>
+        <item>Kirundi (rn)</item>
+        <item>Kiswahili (sw)</item>
+        <item>Kreyòl ayisyen (ht)</item>
+        <item>Kurdî (ku)</item>
+        <item>Latina (la)</item>
+        <item>Latviešu (lv)</item>
+        <item>Lëtzebuergesch (lb)</item>
+        <item>Lietuvių (lt)</item>
+        <item>Líguru (lij)</item>
+        <item>Limburgs (li)</item>
+        <item>Lingála (ln)</item>
+        <item>Lojban (jbo)</item>
+        <item>Luganda (lg)</item>
+        <item>Lumbaart (lmo)</item>
+        <item>Magyar (hu)</item>
+        <item>Malagasy (mg)</item>
+        <item>Malti (mt)</item>
+        <item>Māori (mi)</item>
+        <item>Min Dong (cdo)</item>
+        <item>Myanmasa (my)</item>
+        <item>Nāhuatl (nah)</item>
+        <item>Na Vosa Vakaviti (fj)</item>
+        <item>Nederlands (nl)</item>
+        <item>Nehiyaw (cr)</item>
+        <item>Neré (ne)</item>
+        <item>Nnapulitano (nap)</item>
+        <item>Nordfriisk (frr)</item>
+        <item>Norfuk (pih)</item>
+        <item>Norsk bokmål (no)</item>
+        <item>Norsk nynorsk (nn)</item>
+        <item>Nouormand / Normaund (nrm)</item>
+        <item>Occitan (oc)</item>
+        <item>Oromifaa (om)</item>
+        <item>Pāli (pi)</item>
+        <item>Pangasinán (pag)</item>
+        <item>Papiamentu (pap)</item>
+        <item>Piemontèis (pms)</item>
+        <item>Plattdüütsch (nds)</item>
+        <item>Polski (pl)</item>
+        <item>Português (pt)</item>
+        <item>Reo Mā`ohi (ty)</item>
+        <item>Ripoarisch (ksh)</item>
+        <item>Română (ro)</item>
+        <item>Rromani (rmy)</item>
+        <item>Rumantsch (rm)</item>
+        <item>Runa Simi (qu)</item>
+        <item>Sámegiella (se)</item>
+        <item>Sängö (sg)</item>
+        <item>Sardu (sc)</item>
+        <item>Scots (sco)</item>
+        <item>seSotho (st)</item>
+        <item>Setswana (tn)</item>
+        <item>Shqip (sq)</item>
+        <item>Sicilianu (scn)</item>
+        <item>Sinugboanong Binisaya (ceb)</item>
+        <item>SiSwati (ss)</item>
+        <item>Slovenčina (sk)</item>
+        <item>Slovenščina (sl)</item>
+        <item>Soomaaliga (so)</item>
+        <item>Srpskohrvatski / Српскохрватски (sh)</item>
+        <item>Suomi (fi)</item>
+        <item>Svenska (sv)</item>
+        <item>Tagalog (tl)</item>
+        <item>Tatarça (tt)</item>
+        <item>Tetun (tet)</item>
+        <item>Tiếng Việt (vi)</item>
+        <item>Tok Pisin (tpi)</item>
+        <item>Tsetsêhestâhese (chy)</item>
+        <item>Türkçe (tr)</item>
+        <item>Türkmençe (tk)</item>
+        <item>Twi (tw)</item>
+        <item>Vèneto (vec)</item>
+        <item>Volapük (vo)</item>
+        <item>Võro (fiu-vro)</item>
+        <item>Walon (wa)</item>
+        <item>West-Vlams (vls)</item>
+        <item>Winaray (war)</item>
+        <item>Wollof (wo)</item>
+        <item>Xitsonga (ts)</item>
+        <item>Yorùbá (yo)</item>
+        <item>Zeêuws (zea)</item>
+        <item>Ελληνικά (el)</item>
+        <item>Авар (av)</item>
+        <item>Аҧсуа бызшәа (ab)</item>
+        <item>Башҡорт (ba)</item>
+        <item>Беларуская (be)</item>
+        <item>Български (bg)</item>
+        <item>Словѣньскъ (cu)</item>
+        <item>Иронау (os)</item>
+        <item>Қазақша (kk)</item>
+        <item>Коми (kv)</item>
+        <item>Македонски (mk)</item>
+        <item>Монгол (mn)</item>
+        <item>Нохчийн (ce)</item>
+        <item>Русский (ru)</item>
+        <item>Српски / Srpski (sr)</item>
+        <item>Тоҷикӣ (tg)</item>
+        <item>Удмурт (udm)</item>
+        <item>Українська (uk)</item>
+        <item>Ўзбек (uz)</item>
+        <item>Хальмг (xal)</item>
+        <item>Чӑваш (cv)</item>
+        <item>Armenian (hy)</item>
+        <item>Georgian (ka)</item>
+        <item>Ivrit / Hebrew (he)</item>
+        <item>Yiddish (yi)</item>
+        <item>Arabic (ar)</item>
+        <item>fārsi (fa)</item>
+        <item>Yaren Hausa (ha)</item>
+        <item>Pashto (pa)</item>
+        <item>Sindhi (sd)</item>
+        <item>Urdu (ur)</item>
+        <item>Uyghur (ug)</item>
+        <item>Bangla (bn)</item>
+        <item>Gujarātī (gu)</item>
+        <item>Bhojpuri (bh)</item>
+        <item>Hindi (hi)</item>
+        <item>Koshur / Kashmiri (ks)</item>
+        <item>Kanarese / Kannada (kn)</item>
+        <item>Nepali (ne)</item>
+        <item>Malayalam / malayāḷam (ml)</item>
+        <item>Punjabi (pa)</item>
+        <item>Tamil / Thamizh (ta)</item>
+        <item>Telugu (te)</item>
+        <item>Tibetan (bo)</item>
+        <item>Dzongkha (dz)</item>
+        <item>Sinhala (si)</item>
+        <item>Khmer (km)</item>
+        <item>Lao (lo)</item>
+        <item>Thai (th)</item>
+        <item>Amharic (am)</item>
+        <item>Tigrinya (ti)</item>
+        <item>Inuktitut (iu)</item>
+        <item>한국어 (ko)</item>
+        <item>日本語 (ja)</item>
+        <item>中文 (zh)</item>
+        <item>吴语 (wuu)</item>
+        <item>文言 (lzh)</item>
+        <item>粵語 (yue)</item>
+        <item>otra idioma</item>
+    </string-array>
+
+</resources>

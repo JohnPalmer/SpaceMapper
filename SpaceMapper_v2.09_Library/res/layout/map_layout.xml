@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Space Mapper
+ * Copyright (C) 2012, 2013 John R.B. Palmer
+ * Contact: jrpalmer@princeton.edu
+ * 
+ * This file is part of Space Mapper.
+ * 
+ * Space Mapper is free software: you can redistribute it and/or modify 
+ * it under the terms of the GNU General Public License as published by 
+ * the Free Software Foundation, either version 3 of the License, or (at 
+ * your option) any later version.
+ * 
+ * Space Mapper is distributed in the hope that it will be useful, but 
+ * WITHOUT ANY WARRANTY; without even the implied warranty of 
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+ * See the GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License along 
+ * with Space Mapper.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <com.google.android.maps.MapView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/mapview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:apiKey=""
+            android:clickable="true" />
+
+        <LinearLayout
+            android:id="@+id/mapReceiverNotificationArea"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/dark_grey"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/mapReceiversOffWarning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/dispads"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mapProgressNotificationArea"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/dark_grey"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/progressBarLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" />
+
+            <ProgressBar
+                android:id="@+id/mapProgressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:padding="10dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dateArea"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/dateSelectionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dip"
+            android:background="@drawable/red_border"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dip"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/dateSelectorArea"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateSelectionText"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
