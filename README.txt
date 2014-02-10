@@ -1,4 +1,17 @@
-The accompanying folder contains the source code for Space Mapper as well as the license agreements to which it is subject (see the res/raw folder). The only differences between this code and that used to compile the Space Mapper binary that can be downloaded from Google Play are as follows:
+Space Mapper is a mobile phone app that collects information about the spaces we move through as we go about our daily activities. It was used in 2012-2013 by researchers at Princeton University and the Center for Advanced Studies of Blanes (CEAB-CSIC) to study human mobility and social inequality. The study is now over but the app is still available for anyone to use for their own self-tracking.
+
+Features:
+* Allows you to store, map, and analyze your own movement patterns and to view them in three dimensional spacetime.
+* "Refresh GPS" button improves location performance for all of your mapping apps.
+* Minimally intrusive and designed to conserve battery power.
+* Turn it off and on whenever you want.
+* Free, open source software. 
+* More on-phone data visualization and analysis tools coming soon.
+* Application available in English, Spanish and Catalan.
+
+For more information, please visit <http://activityspaceproject.com> or <http://play.google.com/store/apps/details?id=edu.princeton.jrpalmer.asm>.
+
+This repository contains the source code for the most recent release of Space Mapper as well as the license agreements to which it is subject (see the res/raw folder). The only differences between this code and that used to compile the Space Mapper binary that can be downloaded from Google Play are as follows:
 
 1. The author's Google Maps API keys have been removed from the map_layout.xml file.
 
@@ -9,7 +22,7 @@ The accompanying folder contains the source code for Space Mapper as well as the
 Space Mapper is part of an academic study on the spaces people move 
 through as they go about their daily activities. It was written by John R.B.Palmer based in part on code from the Human Mobility Project, written by Chang Y. Chung, Kathleen Li, and Necati E. Ozgencil and from Funf, written by Nadav Aharony, Wei Pan, and Alex Pentland, and from range-seek-bar, written by Stephan Tittel, Peter Sinnott, and Thomas Barrasso.
 
-The Space Mapper source code is available at the website listed below.
+Previous versions of the Space Mapper source code are available at <http://activityspaceproject.com>.
 
 Copyright 2012, 2013 John R.B. Palmer
  
