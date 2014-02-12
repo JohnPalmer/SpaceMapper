@@ -1,6 +1,8 @@
+# **Space Mapper**
+
 Space Mapper is a mobile phone app that collects information about the spaces we move through as we go about our daily activities. It was used in 2012-2013 by researchers at Princeton University and the Center for Advanced Studies of Blanes (CEAB-CSIC) to study human mobility and social inequality. The study is now over but the app is still available for anyone to use for their own self-tracking.
 
-Features:
+*Features:*
 * Allows you to store, map, and analyze your own movement patterns and to view them in three dimensional spacetime.
 * "Refresh GPS" button improves location performance for all of your mapping apps.
 * Minimally intrusive and designed to conserve battery power.
