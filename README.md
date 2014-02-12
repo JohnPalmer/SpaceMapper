@@ -11,7 +11,7 @@ Space Mapper is a mobile phone app that collects information about the spaces we
 * More on-phone data visualization and analysis tools coming soon.
 * Application available in English, Spanish and Catalan.
 
-For more information, please visit <http://activityspaceproject.com> or <http://play.google.com/store/apps/details?id=edu.princeton.jrpalmer.asm>.
+For more information, please visit the project [website](<http://activityspaceproject.com>) or its [Google Play page]( http://play.google.com/store/apps/details?id=edu.princeton.jrpalmer.asm).
 
 This repository contains the source code for the most recent release of Space Mapper as well as the license agreements to which it is subject (see the res/raw folder). The only differences between this code and that used to compile the Space Mapper binary that can be downloaded from Google Play are as follows:
 
