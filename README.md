@@ -1,4 +1,4 @@
-# **Space Mapper**
+# **Space Mapper** ![bcn](http://activityspaceproject.com/bannerRight_la.png)
 
 Space Mapper is a mobile phone app that collects information about the spaces we move through as we go about our daily activities. It was used in 2012-2013 by researchers at Princeton University and the Center for Advanced Studies of Blanes (CEAB-CSIC) to study human mobility and social inequality. The study is now over but the app is still available for anyone to use for their own self-tracking.
 
