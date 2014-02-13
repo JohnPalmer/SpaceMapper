@@ -279,7 +279,6 @@ public final class R {
     public static final class raw {
         public static int gpl=0x7f040000;
         public static int lgpl=0x7f040001;
-        public static int pubkey=0x7f040002;
     }
     public static final class string {
         public static int AgeHint=0x7f0700ca;
