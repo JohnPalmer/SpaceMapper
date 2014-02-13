@@ -254,7 +254,6 @@ int layout withdraw 0x7f030017
 int layout withdraw_lock 0x7f030018
 int raw gpl 0x7f040000
 int raw lgpl 0x7f040001
-int raw pubkey 0x7f040002
 int string AgeHint 0x7f0700ca
 int string GPL 0x7f070074
 int string LGPL 0x7f070075
