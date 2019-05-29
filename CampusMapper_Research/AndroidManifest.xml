@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Campus Mobility is a mobile phone app for studying activity spaces on campuses. It is based in part on code from the Human Mobility Project.
+  ~
+  ~ Copyright (c) 2015 John R.B. Palmer.
+  ~
+  ~ Campus Mobility is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+  ~
+  ~ Campus Mobility is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses.
+  ~
+  ~
+  ~ The code incorporated from the Human Mobility Project is subject to the following terms:
+  ~
+  ~ Copyright 2010, 2011 Human Mobility Project
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.movelab.mobility"
+    android:versionCode="12"
+    android:versionName="1.06" >
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/maps_api_key_production"/>
+
+        <activity android:name="net.movelab.cmlibrary.SplashScreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="net.movelab.cmlibrary.Registration" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="net.movelab.cmlibrary.Settings" >
+        </activity>
+        <activity android:name="net.movelab.cmlibrary.Help" >
+        </activity>
+        <activity android:name="net.movelab.cmlibrary.Intro" >
+        </activity>
+        <activity android:name="net.movelab.cmlibrary.Consent" >
+        </activity>
+        <activity
+            android:name="net.movelab.cmlibrary.MapMyData"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity android:name="net.movelab.cmlibrary.ListMyDataCursorLoader" >
+        </activity>
+        <activity
+            android:name="net.movelab.cmlibrary.Withdraw"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity android:name="net.movelab.cmlibrary.DebriefingSurvey" >
+        </activity>
+        <activity android:name="net.movelab.cmlibrary.UnderAgeMessage" >
+        </activity>
+        <activity android:name="net.movelab.cmlibrary.WithdrawLock" >
+        </activity>
+        <activity android:name="net.movelab.cmlibrary.GPLView" >
+        </activity>
+        <activity android:name="net.movelab.cmlibrary.LGPLView" >
+        </activity>
+        <activity android:name="net.movelab.cmlibrary.Contact" >
+        </activity>
+        <activity android:name="net.movelab.cmlibrary.FAQs" >
+        </activity>
+        <activity android:name="net.movelab.cmlibrary.About" >
+        </activity>
+        <activity android:name="net.movelab.cmlibrary.Message" >
+        </activity>
+        <activity android:name="net.movelab.cmlibrary.TransportationModeSurvey" >
+        </activity>
+        <activity android:name="net.movelab.cmlibrary.ReviewConsent" >
+        </activity>
+        <activity android:name="net.movelab.cmlibrary.Lifeline" >
+        </activity>
+
+        <receiver android:name="net.movelab.cmlibrary.SpaceMapperBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.LAUNCHER" />
+                <action android:name="net.movelab.campus_mapper.SCHEDULE_SERVICE" />
+                <action android:name="net.movelab.campus_mapper.UNSCHEDULE_SERVICE" />
+                <action android:name="net.movelab.campus_mapper.message_start_message_ab_timer" />
+                <action android:name="net.movelab.campus_mapper.message_start_message_c_timer" />
+                <action android:name="net.movelab.campus_mapper.message_make_a_notification" />
+                <action android:name="net.movelab.campus_mapper.message_make_b_notification" />
+                <action android:name="net.movelab.campus_mapper.message_make_c_notification" />
+                <action android:name="net.movelab.campus_mapper.message_cancel_a_notification" />
+                <action android:name="net.movelab.campus_mapper.message_cancel_b_notification" />
+                <action android:name="net.movelab.campus_mapper.message_cancel_c_notification" />
+                <action android:name="android.net.wifi.supplicant.CONNECTION_CHANGE" />
+                <action android:name="android.intent.action.POWER_CONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="net.movelab.cmlibrary.PowerSensor" >
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.POWER_CONNECTED" />
+                <action android:name="android.intent.action.POWER_DISCONNECTED" />
+                <action android:name="android.intent.action.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="net.movelab.cmlibrary.FixGet" />
+        <service android:name="net.movelab.cmlibrary.NmeaGet" />
+        <service android:name="net.movelab.cmlibrary.FileUploader" />
+
+        <provider
+            android:name="net.movelab.mobility.SpaceMapperResearchContentProvider"
+            android:authorities="net.movelab.campus_mapper.spacemapperfixprovider"
+            android:enabled="true"
+            android:exported="false" >
+        </provider>
+        <provider
+            android:name="net.movelab.mobility.SpaceMapperResearchUploadQueueContentProvider"
+            android:authorities="net.movelab.campus_mapper.uploadqueueprovider"
+            android:enabled="true"
+            android:exported="false" >
+        </provider>
+    </application>
+
+</manifest>
