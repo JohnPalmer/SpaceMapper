@@ -6,7 +6,7 @@ This file contains specifications for programming and design work being sought f
 
 Space Mapper is a mobile phone app for Android that collects information about the spaces we move through as we go about our daily activities. At its core, Space Mapper collects location information (GPS and network as well as cell tower IDs) at regular intervals, giving the user control to change these intervals or turn tracking off entirely. Information collected by the app is encrypted with a public key embedded in the app, and sent to a research server. 
 
-Space Mapper went through multiple versions and releases during 2012 and 2013. It was also modified and released as a distinct research app called Campus Mapper in 2015. The production branch of that release has now been forked back into this repository as the orphan branch v4, which is now the default branch and the one to which this file is also written. The code in this branch should be the starting point for any work on the app. However, parts of the original code that were never used for Campus Mapper may still be relevant, and can be found in the other branches.
+Space Mapper went through multiple versions and releases during 2012 and 2013. It was also modified and released as a distinct research app called [Campus Mapper](https://github.com/JohnPalmer/CampusMapper) in 2015. The production branch of that release has now been forked back into this repository as the orphan branch v4, which is now the default branch and the one to which this file is also written. The code in this branch should be the starting point for any work on the app. However, parts of the original code that were never used for Campus Mapper may still be relevant, and can be found in the other branches.
 
 ### Desired Work
 
