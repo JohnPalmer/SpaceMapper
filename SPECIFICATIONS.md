@@ -34,7 +34,7 @@ where Util.latMask is a constant that can easily be set within the code. The use
 
 User experience should be improved through minor changes to the interface, as well as improvements to battery consumption. What we are looking for here is a relatively quick assessment of minor improvements and implementation of these.
 
-#### Gather and send to server information from other accelerometer and barometer if available 
+#### Gather and send to server information from accelerometer and barometer if available 
 
 During the same windows when location fixes are being recorded, the app should take measures from the phone's accelerometer and barometer, if these arae present on on phone, and send measures to the server along wit the locations. 
 
