@@ -34,9 +34,10 @@ where Util.latMask is a constant that can easily be set within the code. The use
 
 User experience should be improved through minor changes to the interface, as well as improvements to battery consumption. What we are looking for here is a relatively quick assessment of minor improvements and implementation of these.
 
-#### Gather and send to server information from accelerometer and barometer if available 
+#### Gather and send to server information from other sensors available on phone 
 
-During the same windows when location fixes are being recorded, the app should take measures from the phone's accelerometer and barometer, if these arae present on on phone, and send measures to the server along wit the locations. 
+During the same windows when location fixes are being recorded, the app should take measures from the phone's other available [sensors](https://developer.android.com/guide/topics/sensors/sensors_overview), and send measures to the server along wit the locations. The code should be set up to make it easy to limit the set of targeted sensors to some arbtrary set.
+
 
 #### iOS version
 
