@@ -1,6 +1,6 @@
 ## Space Mapper Version 4 Specifications
 
-This file contains specifications for programming and design work being sought for a new version of Space Mapper. If you would like to bid on this work, please list prices separately for each item. Please also provide an estimate of necessary time to completetion. Send bids to john.palmer [at] upf.edu by 4 June 2019 at the latest.
+This file contains specifications for programming and design work being sought for a new version of Space Mapper. If you would like to send a proposal for this work, please list price estimates separately for each item. Please also provide an estimate of necessary time to completetion. Send estimates to john.palmer [at] upf.edu.
 
 ### Background and Overview of the Project
 
