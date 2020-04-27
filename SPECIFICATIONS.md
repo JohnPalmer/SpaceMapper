@@ -1,6 +1,6 @@
 ## Space Mapper Version 4 Specifications
 
-This file contains specifications for programming and design work being sought for a new version of Space Mapper. If you would like to send a proposal for this work, please list price estimates separately for each item. Please also provide an estimate of necessary time to completetion. Send estimates to john.palmer [at] upf.edu.
+This file contains specifications for programming and design work currently underway for a new version of Space Mapper. If you would like to contribute to this work, please contact [John Palmer](https://github.com/JohnPalmer).
 
 ### Background and Overview of the Project
 
@@ -8,9 +8,7 @@ Space Mapper is a mobile phone app for Android that collects information about t
 
 Space Mapper went through multiple versions and releases during 2012 and 2013. It was also modified and released as a distinct research app called [Campus Mapper](https://github.com/JohnPalmer/CampusMapper) in 2015. The production branch of that release has now been forked back into this repository as the orphan branch v4, which is now the default branch and the one to which this file is also written. The code in this branch should be the starting point for any work on the app. However, parts of the original code that were never used for Campus Mapper may still be relevant, and can be found in the other branches.
 
-### Desired Work
-
-Bids are requested for the following work:
+### Version 4
 
 #### Update code to support latest Android versions
 
